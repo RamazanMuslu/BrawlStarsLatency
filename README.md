@@ -1,0 +1,2 @@
+# BrawlStarsLatency
+Ping tracker
