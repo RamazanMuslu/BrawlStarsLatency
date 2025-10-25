@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"> <!-- İçerik küçük olsa bile ScrollView'in tüm alanı kaplamasını sağlar -->
+
+    <!-- ScrollView'in tek çocuğu olacak olan ana LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="#2C2C2C"
+    tools:context=".FeedingSectionActivity">
+
+    <!-- Başlık -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_title"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_noads"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.99$/Forever"
+        android:backgroundTint="#FF9800"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+      <Space
+          android:layout_width="0dp"
+          android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/premium_sync_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+        <!-- Geri Düğmesi -->
+        <Button
+            android:id="@+id/btnPurchaseBack"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:text="@string/premium_back" />
+
+</LinearLayout>
+    </ScrollView>

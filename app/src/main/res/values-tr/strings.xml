@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Brawl Stars Ping Meter</string>
+
+    <string name="toast_langauge_changed">Dil Değiştirildi</string>
+    <string name="toast_server_changed">Sunucu Değiştirildi</string>
+    <string name="toast_refreshing_time_set_default">Yenileme Süresi 1000ms (1 Saniye) Olarak Sıfırlandı</string>
+    <string name="toast_error_permission_overlay">Overlay izni olmadan metin gösterilemez.</string>
+    <string name="toast_overlay_text_hidden">Overlay metni gizlendi.</string>
+    <string name="toast_overlay_text_activate">Overlay metni etkinleştirildi.</string>
+    <string name="toast_selected_color">Seçilen Renk: </string>
+    <string name="toast_settings_saved">Ayarlar Kaydedildi!</string>
+    <string name="toast_deeplink_invalid_server_name">Invalid Server Name</string>
+    <string name="toast_update_control_error">Bir Hata Oluştu</string>
+    <string name="toast_latency_logs_deleted">Gecikme Kayıtları Silindi</string>
+    <string name="toast_premium_features_coming_soon">Premium Özellikler Yakında Geliyor</string>
+
+    <string name="overlay_ping_text">Ping: </string>
+    <string name="overlay_ip_address_access_error">IP Adresi Alınamadı!</string>
+
+    <string name="color_unknown">Bilinmeyen Renk</string>
+    <string name="color_black">Siyah</string>
+    <string name="color_white">Beyaz</string>
+    <string name="color_red">Kırmızı</string>
+    <string name="color_blue">Mavi</string>
+    <string name="color_green">Yeşil</string>
+
+    <string name="overlay_enter_url_hint">Hata: Sunucu Bulunamadı!</string>
+    <string name="overlay_invalid_url">Hata: Sunucu URL\'si Geçersiz!</string>
+    <string name="overlay_ping_error_connection">Hata: Bağlantı Hatası!</string>
+    <string name="overlay_ping_failed">Hata: Bağlantı Başarısız!</string>
+    <string name="overlay_menu_close_app">Uygulamayı Kapat</string>
+    <string name="overlay_menu_settings">Ayarlar</string>
+
+
+    <string name="main_ping_text">Ping: 999ms</string>
+    <string name="main_activate_overlay_toogle_activate">Ping Göstergesini Etkinleştir</string>
+    <string name="main_activate_overlay_toogle_disable">Ping Göstergesini Devre Dışı Bırak</string>
+    <string name="main_feeding_section">Sunucu Seç</string>
+    <string name="main_text_options">Metin Ayarları</string>
+    <string name="main_app_settings">Uygulama Ayarları</string>
+    <string name="main_about_app">Uygulama Hakkında</string>
+    <string name="main_close_app">Uygulamayı Kapat</string>
+    <string name="main_app_build_name">Sürüm: </string>
+    <string name="main_app_build_code">Derleme: </string>
+    <string name="main_latency_logs">Gecikme Kayıtları</string>
+    <string name="main_app_stats">Uygulama İstatislikleri</string>
+    <string name="main_fast">Hızlı Eylemler</string>
+    <string name="main_options">Ayarlar</string>
+
+    <string name="feeding_section_title">Sunucu Seç</string>
+    <string name="feeding_section_refreshing_time">Yenileme Süresi: </string>
+    <string name="feeding_section_refreshing_time_current">Mevcut Yenileme Süresi (MiliSaniye): </string>
+    <string name="feeding_section_refreshing_time_default">Varsayılan Ayarlar</string>
+    <string name="feeding_section_refreshing_time_warning">
+Bu ayar, seçilen zaman dilimi başına gecikmeyi ölçer.
+Daha düşük hızlar daha fazla bilgi sağlayabilir ancak daha fazla CPU
+gücü kullanır, bu nedenle eski cihazlar için önerilmez. Varsayılan ayar
+1 saniyedir.</string>
+    <string name="feeding_section_refreshing_time_warning_data">
+Seçtiğiniz hız ne kadar düşükse o kadar fazla veri harcar.
+        Ortalama her ping kontrolü 60b\'lık bir veri harcar (1 Kb\'ın 10\'da 1\'inden daha az bir veri).
+        Örneğin 0.5 saniyelik ayarda saniyede 2 kez atıcağı için saniyede 120b\'lık veri harcar.</string>
+    <string name="feeding_section_current_server">Mevcut Sunucu: </string>
+    <string name="feeding_section_back_button">Geri</string>
+
+    <string name="text_options_title">Metin Ayarları</string>
+    <string name="text_options_text_size">Metin Boyutu: </string>
+    <string name="text_options_text_size_current_size">Mevcut Boyut: </string>
+    <string name="text_options_background_size">Arkaplan Boyutu: </string>
+    <string name="text_options_background_size_current_scale">Mevcut Boyut: </string>
+    <string name="text_options_text_color">Metin Rengi: </string>
+    <string name="text_options_text_color_white">Beyaz</string>
+    <string name="text_options_text_color_red">Kırmızı</string>
+    <string name="text_options_text_color_blue">Mavi</string>
+    <string name="text_options_text_color_black">Siyah</string>
+    <string name="text_options_text_color_green">Yeşil</string>
+    <string name="text_options_text_color_current">Mevcut Renk: </string>
+    <string name="text_option_latency_image_visibility">Gecikme Resmi Görünürlüğü: </string>
+    <string name="text_option_latency_image_visibility_current">Geçerli Görünürlük: </string>
+    <string name="text_option_latency_text_visibility">Gecikme Metni Görünürlüğü: </string>
+    <string name="text_option_latency_text_visibility_current">Geçerli Görünürlük: </string>
+    <string name="text_option_latency_close_visibility">Kapatma Düğmesi Görünürlüğü: </string>
+    <string name="text_option_latency_close_visibility_current">Geçerli GÖrünürlük: </string>
+    <string name="text_options_main_menu_ping_meter_visibility">Ping Önizleme Göstergesi</string>
+    <string name="text_options_main_menu_ping_meter_visibility_current">Geçerli Görünürlük</string>
+    <string name="text_options_main_menu_ping_meter_visibility_warning">
+        Bu ayar daha fazla veri tüketir. Önizleme için 1 saniyelik aralıklarla ping atmaktadır.
+        Saniyede yaklaşık 60B veri tüketir.
+    </string>
+    <string name="text_option_visibility_types_visible">Görünür</string>
+    <string name="text_option_visibility_types_hidden">Gizli</string>
+    <string name="text_option_visibility_types_hide">Gizle</string>
+    <string name="text_option_visibility_types_show">Göster</string>
+    <string name="text_options_save_and_apply">Değişiklikleri Kaydet ve Uygula</string>
+    <string name="text_options_back_button">Geri</string>
+
+    <string name="about_app_title">Uygulama Hakkında</string>
+    <string name="about_app_about_text">
+Bu uygulama, Brawl Stars gibi Amazon Web Services altyapısında çalışan
+oyunlar için geliştirilmiştir. Amacı, belirlediğiniz bir sunucu ile
+seçtiğiniz zaman aralığında iletişim hızını ölçmek ve ekranda göstermektir.
+Ekrandaki metni istediğiniz gibi özelleştirebilirsiniz (renk, boyut ve konum).
+\n\n
+Bu uygulama Supercell veya Amazon tarafından geliştirilmemiştir veya desteklenmemektedir.
+Tamamen hayranlar tarafından oluşturulmuş bir içeriktir. İlginiz için teşekkür ederiz.
+\n\n
+Bu uygulama bir hile yazılımı değildir.
+Oyunu manipüle etmez.
+Oyunla iletişim kurmaz.
+Toplanan veriler üçüncü taraflarla paylaşılmaz.
+(Toplanan veriler: cihaz markası, cihaz modeli, ping bilgisi)
+\n\n
+Geliştirici: Ramazan Muslu
+\n
+Instagram: @ddr8ramazan
+\n
+Discord: ramazan_developer</string>
+    <string name="about_app_back_button">Geri</string>
+
+    <string name="app_settings_title">Uygulama Ayarları</string>
+    <string name="app_settings_language_select">Dil Seçimi</string>
+    <string name="app_settings_language_current">Mevcut Dil: </string>
+    <string name="app_settings_back_button">Geri</string>
+
+    <string name="latency_logs_title">Gecikme Kayıtları</string>
+    <string name="latency_logs_highest">En Yüksek Ping</string>
+    <string name="latency_logs_lowest">En Düşük Ping</string>
+    <string name="latency_logs_menu">Menü</string>
+    <string name="latency_logs_options">Seçenekler</string>
+    <string name="latency_logs_avarage">Ortalama Ping</string>
+    <string name="latency_logs_default">Varsayılan Ping</string>
+    <string name="latency_logs_back">Geri</string>
+    <string name="latency_logs_ping">Ping: </string>
+    <string name="latency_logs_date">Tarih: </string>
+    <string name="latency_logs_ip">IP Adresi: </string>
+    <string name="latency_logs_refresh">Yenile</string>
+    <string name="latency_logs_deleteall">Sil</string>
+    <string name="latency_logs_filters">Filtreler</string>
+    <string name="latency_logs_filters_ip_addresses">IP Adresleri</string>
+    <string name="latency_logs_filters_ip_addresses_all">Tümü</string>
+
+    <string name="premium_title">BSMS Premium</string>
+    <string name="premium_noads">Reklamsız Ömür Boyu</string>
+    <string name="premium_forever">Ömür Boyu</string>
+    <string name="premium_sync_text">Satın Almayı Senkronize Et</string>
+    <string name="premium_back">Geri</string>
+    
+    <string name="stats_title">İstatislikler</string>
+    <string name="stats_usage_time">Kullanım Süresi</string>
+    <string name="stats_usage_time_hours">Saat</string>
+    <string name="stats_usage_time_minutes">Dakika</string>
+    <string name="stats_usage_time_seconds">Saniye</string>
+    <string name="stats_usage_datas">Harcanan Veri</string>
+    <string name="stats_latency">Gecikme İstatislikleri</string>
+    <string name="stats_latency_open_with_logs">Log Kayıtları</string>
+    <string name="stats_latency_lowest">En Düşük</string>
+    <string name="stats_latency_highest">En Yüksek</string>
+    <string name="stats_latency_avarage">Ortalama</string>
+    <string name="stats_usage_datas_overlay">Üstte Göster</string>
+    <string name="stats_usage_datas_main_menu">Ana Menü</string>
+    <string name="stats_usage_datas_total">Toplam</string>
+    <string name="stats_ping_count">Atılan Ping Sayısı</string>
+    <string name="stats_ping_count_overlay">Üstte Göster</string>
+    <string name="stats_ping_count_main_menu">Ana Menü</string>
+    <string name="stats_ping_count_total">Toplam</string>
+
+    <string name="qs_button_default">Ping Metre</string>
+    <string name="qs_button_active">Ping Metre Çalışıyor</string>
+</resources>

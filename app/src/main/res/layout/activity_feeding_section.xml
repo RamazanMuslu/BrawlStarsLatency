@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2c"
+    tools:context=".FeedingSectionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/feeding_section_title"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnFeedingSection_BackMain"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:rotation="90"
+            android:src="@mipmap/ic_arrow_down_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRefreshTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/feeding_section_refreshing_time"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <SeekBar
+                    android:id="@+id/seekBarLatencyRefreshingTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:max="3000"
+                    android:min="500"
+                    android:progress="1000"
+                    android:progressTint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tvLatencyRefreshingTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/feeding_section_refreshing_time_current"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17.5dp" />
+
+                <Button
+                    android:id="@+id/btnLatencyRefreshingTimeSetDefault"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/feeding_section_refreshing_time_default" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/feeding_section_refreshing_time_warning"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/feeding_section_refreshing_time_warning_data"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCurrentFeedUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/feeding_section_current_server"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutRefreshTime" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrentFeedUrl">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_EU_GE1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="EU/Germany-1" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_EU_GE2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="EU/Germany-2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_AP_INDIA"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="AP/India" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_AP_SINGAPORE"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="AP/Singapore" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_AP_HONGKONG"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="AP/Hong Kong" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_AP_JAPAN"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="AP/Japan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_EU_ITALY"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="EU/Italy" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_EU_IRELAND"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="EU/Ireland" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_AP_SYDNEY"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="AP/Sydney" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_EU_FINLAND"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="EU/Finland" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_NA_VIRGINIA"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="NA/Virginia" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_ME_BAHRAIN"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="ME/Bahrain" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_NA_LOSANGELES"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="NA/Los Angeles" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_NA_OREGON"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="NA/Oregon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_NA_DALLAS"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="NA/Dallas" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_NA_MIAMI"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="NA/Miami" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_SA_PERU"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="SA/Peru" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSelectServer_SA_CHILE"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="SA/Chile" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSelectServer_SA_BRASIL1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="SA/Brasil-1" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

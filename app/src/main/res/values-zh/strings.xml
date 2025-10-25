@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">Brawl Stars Ping 監測器</string>
+
+    <string name="toast_langauge_changed">语言已更改</string>
+    <string name="toast_server_changed">服务器已更改</string>
+    <string name="toast_refreshing_time_set_default">刷新时间已重置为 1000 毫秒（1 秒）</string>
+    <string name="toast_error_permission_overlay">没有叠加层权限，无法显示文本。</string>
+    <string name="toast_overlay_text_hidden">叠加层文本已隐藏。</string>
+    <string name="toast_overlay_text_activate">叠加层文本已激活。</string>
+    <string name="toast_selected_color">已选颜色：</string>
+    <string name="toast_settings_saved">设置已保存！</string>
+    <string name="toast_deeplink_invalid_server_name">无效的服务器名称</string>
+    <string name="toast_update_control_error">发生了一个错误</string>
+    <string name="toast_latency_logs_deleted">延迟日志已删除</string>
+    <string name="toast_premium_features_coming_soon">高级功能即将推出</string>
+
+    <string name="color_unknown">未知颜色</string>
+    <string name="color_black">黑色</string>
+    <string name="color_white">白色</string>
+    <string name="color_red">红色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_green">绿色</string>
+
+    <string name="overlay_enter_url_hint">错误：找不到服务器！</string>
+    <string name="overlay_invalid_url">错误：服务器 URL 无效！</string>
+    <string name="overlay_ping_error_connection">错误：连接错误！</string>
+    <string name="overlay_ping_failed">错误：连接失败！</string>
+    <string name="overlay_ping_text">Ping：</string>
+    <string name="overlay_ip_address_access_error">无法获取 IP 地址 (Wúfǎ huòqǔ IP dìzhǐ)</string>
+    <string name="overlay_menu_close_app">关闭应用</string>
+    <string name="overlay_menu_settings">设置</string>
+
+    <string name="main_ping_text">Ping：999ms</string>
+    <string name="main_activate_overlay_toogle_activate">激活叠加层文本</string>
+    <string name="main_activate_overlay_toogle_disable">禁用叠加层文本</string>
+    <string name="main_feeding_section">选择服务器</string>
+    <string name="main_text_options">文本选项</string>
+    <string name="main_app_settings">应用设置</string>
+    <string name="main_about_app">关于应用</string>
+    <string name="main_close_app">关闭应用</string>
+    <string name="main_app_build_name">版本：</string>
+    <string name="main_app_build_code">构建：</string>
+    <string name="main_latency_logs">延迟记录 (Yánchí jìlù)</string>
+    <string name="main_app_stats">应用统计</string>
+    <string name="main_fast">快速操作</string>
+    <string name="main_options">设置</string>
+
+    <string name="feeding_section_title">选择服务器</string>
+    <string name="feeding_section_refreshing_time">刷新时间：</string>
+    <string name="feeding_section_refreshing_time_current">当前刷新时间（毫秒）：</string>
+    <string name="feeding_section_refreshing_time_default">默认设置</string>
+    <string name="feeding_section_refreshing_time_warning">
+此设置测量每个
+所选时间段的延迟。较低的速度可能会提供
+更多信息，但会消耗更多的 CPU 功率，因此不
+建议在较旧的设备上使用。默认设置为
+1 秒。</string>
+    <string name="feeding_section_refreshing_time_warning_data">
+您选择的速度越低，消耗的数据就越多。
+平均而言，每次ping检查会消耗约60b数据（不到1Kb的十分之一）。
+例如，在0.5秒的设置下，它每秒会发送2次ping，每秒消耗120b数据。</string>
+    <string name="feeding_section_current_server">当前服务器：</string>
+    <string name="feeding_section_back_button">返回</string>
+
+    <string name="text_options_title">文本选项</string>
+    <string name="text_options_text_size">文本大小：</string>
+    <string name="text_options_text_size_current_size">当前大小：</string>
+    <string name="text_options_background_size">Background Size: </string> <!-- TODO -->
+    <string name="text_options_background_size_current_scale">Current Size: </string> <!-- TODO -->
+    <string name="text_options_text_color">文本颜色：</string>
+    <string name="text_options_text_color_white">白色</string>
+    <string name="text_options_text_color_red">红色</string>
+    <string name="text_options_text_color_blue">蓝色</string>
+    <string name="text_options_text_color_black">黑色</string>
+    <string name="text_options_text_color_green">绿色</string>
+    <string name="text_options_text_color_current">当前颜色：</string>
+    <string name="text_option_latency_image_visibility">延迟图像可见性：</string>
+    <string name="text_option_latency_image_visibility_current">当前图像可见性：</string>
+    <string name="text_option_latency_text_visibility">延迟文本可见性：</string>
+    <string name="text_option_latency_text_visibility_current">当前文本可见性：</string>
+    <string name="text_option_latency_close_visibility">关闭按钮可见性：</string>
+    <string name="text_option_latency_close_visibility_current">当前按钮可见性：</string>
+    <string name="text_options_main_menu_ping_meter_visibility">Ping预览指示器</string>
+    <string name="text_options_main_menu_ping_meter_visibility_current">当前可见性</string>
+    <string name="text_options_main_menu_ping_meter_visibility_warning">
+    此设置会消耗更多数据。它以1秒为间隔进行ping以供预览。
+    它每秒消耗大约60B的数据。
+</string>
+    <string name="text_option_visibility_types_visible">可见</string>
+    <string name="text_option_visibility_types_hidden">隐藏</string>
+    <string name="text_option_visibility_types_hide">隐藏</string>
+    <string name="text_option_visibility_types_show">显示</string>
+    <string name="text_options_save_and_apply">保存并应用更改</string>
+    <string name="text_options_back_button">返回</string>
+
+    <string name="about_app_title">关于应用</string>
+    <string name="about_app_about_text">
+此应用程序适用于 Brawl Stars 等在亚马逊网络服务基础设施上运行的游戏。
+其目的是测量与您在指定时间内选择的服务器的通信速度，并将其显示在屏幕上。
+您可以根据需要自定义屏幕上的文本（颜色、大小和位置）。
+\n\n
+此应用程序并非由 Supercell 或 Amazon 开发或支持。
+它完全是粉丝创作的内容。感谢您的关注。
+\n\n
+此应用程序不是作弊软件。
+它不会操纵游戏。
+它不会与游戏通信。
+收集的数据不会与第三方共享。
+（收集的数据：设备品牌、设备型号、ping 信息）
+\n\n
+开发者：Ramazan Muslu
+\n
+Instagram：@ddr8ramazan
+\n
+Discord：@ramazan_developer</string>
+    <string name="about_app_back_button">返回</string>
+
+    <string name="app_settings_title">应用设置</string>
+    <string name="app_settings_language_select">选择语言</string>
+    <string name="app_settings_language_current">当前语言：</string>
+    <string name="app_settings_back_button">返回</string>
+
+    <string name="latency_logs_title">延迟记录</string>
+    <string name="latency_logs_highest">最高 Ping</string>
+    <string name="latency_logs_lowest">最低 Ping</string>
+    <string name="latency_logs_avarage">平均 Ping</string>
+    <string name="latency_logs_default">默认 Ping</string>
+    <string name="latency_logs_menu">菜单</string>
+    <string name="latency_logs_options">选项</string>
+    <string name="latency_logs_back">返回</string>
+    <string name="latency_logs_ping">Ping: </string>
+    <string name="latency_logs_date">日期: </string>
+    <string name="latency_logs_ip">IP 地址: </string>
+    <string name="latency_logs_refresh">刷新</string>
+    <string name="latency_logs_deleteall">全部删除</string>
+    <string name="latency_logs_filters">筛选</string>
+    <string name="latency_logs_filters_ip_addresses">IP 地址</string>
+    <string name="latency_logs_filters_ip_addresses_all">全部</string>
+
+    <string name="premium_title">BSMS Premium</string>
+    <string name="premium_noads">永久无广告</string>
+    <string name="premium_forever">永久</string>
+    <string name="premium_sync_text">同步购买</string>
+    <string name="premium_back">返回</string>
+
+    <string name="stats_title">统计</string>
+    <string name="stats_usage_time">使用时间</string>
+    <string name="stats_usage_time_hours">小时</string>
+    <string name="stats_usage_time_minutes">分钟</string>
+    <string name="stats_usage_time_seconds">秒</string>
+    <string name="stats_usage_datas">数据消耗</string>
+    <string name="stats_latency">延迟统计</string>
+    <string name="stats_latency_open_with_logs">查看日志</string>
+    <string name="stats_latency_lowest">最低</string>
+    <string name="stats_latency_highest">最高</string>
+    <string name="stats_latency_avarage">平均</string>
+    <string name="stats_usage_datas_overlay">悬浮显示</string>
+    <string name="stats_usage_datas_main_menu">主菜单</string>
+    <string name="stats_usage_datas_total">总计</string>
+    <string name="stats_ping_count">Ping次数</string>
+    <string name="stats_ping_count_overlay">悬浮显示</string>
+    <string name="stats_ping_count_main_menu">主菜单</string>
+    <string name="stats_ping_count_total">总计</string>
+
+    <string name="qs_button_default">Ping测量器</string>
+    <string name="qs_button_active">Ping测量器已激活</string>
+</resources>

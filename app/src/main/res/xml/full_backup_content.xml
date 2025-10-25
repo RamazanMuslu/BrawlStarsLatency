@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Bu dosya, uygulamanın hangi verilerinin yedekleneceğini belirtir.
+         Şimdilik varsayılan olarak her şeyi yedeklemesini sağlıyoruz.
+         Eğer hassas veriler varsa, burada hariç tutabiliriz. -->
+    <include domain="sharedpref" path="."/>
+    <include domain="database" path="."/>
+    <include domain="file" path="."/>
+    <include domain="external" path="."/>
+    <!-- Eğer uygulamanın önbelleğini yedeklemek istemiyorsak, exclude kullanabiliriz:
+    <exclude domain="cache" path="."/>
+    -->
+</full-backup-content>

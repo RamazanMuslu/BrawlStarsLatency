@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Brawl Stars Ping Meter</string>
+
+    <string name="toast_langauge_changed">Язык изменен</string>
+    <string name="toast_server_changed">Сервер изменен</string>
+    <string name="toast_refreshing_time_set_default">Время обновления сброшено до 1000 мс (1 секунда)</string>
+    <string name="toast_error_permission_overlay">Текст не может быть отображен без разрешения на наложение.</string>
+    <string name="toast_overlay_text_hidden">Текст наложения был скрыт.</string>
+    <string name="toast_overlay_text_activate">Текст наложения активирован.</string>
+    <string name="toast_selected_color">Выбранный цвет: </string>
+    <string name="toast_settings_saved">Настройки сохранены!</string>
+    <string name="toast_deeplink_invalid_server_name">Неверное имя сервера</string>
+    <string name="toast_update_control_error">Произошла ошибка</string>
+    <string name="toast_latency_logs_deleted">Журналы задержки удалены</string>
+    <string name="toast_premium_features_coming_soon">Премиум-функции скоро появятся</string>
+
+    <string name="color_unknown">Неизвестный цвет</string>
+    <string name="color_black">Черный</string>
+    <string name="color_white">Белый</string>
+    <string name="color_red">Красный</string>
+    <string name="color_blue">Синий</string>
+    <string name="color_green">Зеленый</string>
+
+    <string name="overlay_enter_url_hint">Ошибка: Сервер не найден!</string>
+    <string name="overlay_invalid_url">Ошибка: Неверный URL-адрес сервера!</string>
+    <string name="overlay_ping_error_connection">Ошибка: Ошибка подключения!</string>
+    <string name="overlay_ping_failed">Ошибка: Сбой подключения!</string>
+    <string name="overlay_ping_text">Пинг: </string>
+    <string name="overlay_ip_address_access_error">Не удалось получить IP-адрес.</string>
+    <string name="overlay_menu_close_app">Закрыть приложение</string>
+    <string name="overlay_menu_settings">Настройки</string>
+
+    <string name="main_ping_text">Пинг: 999 мс</string>
+    <string name="main_activate_overlay_toogle_activate">Активировать текст наложения</string>
+    <string name="main_activate_overlay_toogle_disable">Отключить текст наложения</string>
+    <string name="main_feeding_section">Выбрать сервер</string>
+    <string name="main_text_options">Параметры текста</string>
+    <string name="main_app_settings">Настройки приложения</string>
+    <string name="main_about_app">О приложении</string>
+    <string name="main_close_app">Закрыть приложение</string>
+    <string name="main_latency_logs">Журналы задержки</string>
+    <string name="main_app_build_name">Версия: </string>
+    <string name="main_app_build_code">Сборка: </string>
+    <string name="main_app_stats">Статистика приложения</string>
+    <string name="main_fast">Быстрые действия</string>
+    <string name="main_options">Настройки</string>
+
+    <string name="feeding_section_title">Выбрать сервер</string>
+    <string name="feeding_section_refreshing_time">Время обновления: </string>
+    <string name="feeding_section_refreshing_time_current">Текущее время обновления (миллисекунды): </string>
+    <string name="feeding_section_refreshing_time_default">Настройки по умолчанию</string>
+    <string name="feeding_section_refreshing_time_warning">
+Эта настройка измеряет задержку за выбранный
+период времени. Более низкие скорости могут
+предоставлять больше информации, но потребляют
+больше мощности процессора, поэтому они не
+рекомендуются для старых устройств. Настройка по
+умолчанию - 1 секунда.</string>
+    <string name="feeding_section_refreshing_time_warning_data">
+Чем ниже выбранная вами скорость, тем больше данных она потребляет.
+В среднем, каждая проверка пинга потребляет около 60б данных (менее 1/10 Кб).
+Например, при настройке 0,5 секунды, он будет отправлять 2 пинга в секунду, потребляя 120б данных в секунду.</string>
+    <string name="feeding_section_current_server">Текущий сервер: </string>
+    <string name="feeding_section_back_button">Назад</string>
+
+    <string name="text_options_title">Параметры текста</string>
+    <string name="text_options_text_size">Размер текста: </string>
+    <string name="text_options_text_size_current_size">Текущий размер: </string>
+    <string name="text_options_background_size">Background Size: </string> <!-- TODO -->
+    <string name="text_options_background_size_current_scale">Current Size: </string> <!-- TODO -->
+    <string name="text_options_text_color">Цвет текста: </string>
+    <string name="text_options_text_color_white">Белый</string>
+    <string name="text_options_text_color_red">Красный</string>
+    <string name="text_options_text_color_blue">Синий</string>
+    <string name="text_options_text_color_black">Черный</string>
+    <string name="text_options_text_color_green">Зеленый</string>
+    <string name="text_options_text_color_current">Текущий цвет: </string>
+    <string name="text_option_latency_image_visibility">Видимость изображения задержки: </string>
+    <string name="text_option_latency_image_visibility_current">Текущая видимость изображения: </string>
+    <string name="text_option_latency_text_visibility">Видимость текста задержки: </string>
+    <string name="text_option_latency_text_visibility_current">Текущая видимость текста: </string>
+    <string name="text_option_latency_close_visibility">Видимость кнопки закрытия: </string>
+    <string name="text_option_latency_close_visibility_current">Текущая видимость кнопки: </string>
+    <string name="text_options_main_menu_ping_meter_visibility">Индикатор предварительного просмотра пинга</string>
+    <string name="text_options_main_menu_ping_meter_visibility_current">Текущая видимость</string>
+    <string name="text_options_main_menu_ping_meter_visibility_warning">
+    Эта настройка потребляет больше данных. Для предварительного просмотра пинг измеряется с интервалом в 1 секунду.
+    Он потребляет примерно 60Б данных в секунду.
+</string>
+    <string name="text_option_visibility_types_visible">Видно</string>
+    <string name="text_option_visibility_types_hidden">Скрыто</string>
+    <string name="text_option_visibility_types_hide">Скрыть</string>
+    <string name="text_option_visibility_types_show">Показать</string>
+    <string name="text_options_save_and_apply">Сохранить и применить изменения</string>
+    <string name="text_options_back_button">Назад</string>
+
+    <string name="about_app_title">О приложении</string>
+    <string name="about_app_about_text">
+Это приложение работает для таких игр,
+как Brawl Stars, которые работают на инфраструктуре Amazon Web Services.
+Его цель - измерять скорость связи с выбранным вами сервером
+в течение указанного времени и отображать ее на экране.
+Вы можете настроить текст на экране по своему желанию (цвет, размер и положение).
+\n\n
+Это приложение не было разработано или поддержано Supercell или Amazon.
+Это исключительно контент, созданный фанатами. Спасибо за ваш интерес.
+\n\n
+Это приложение не является чит-программой.
+Оно не манипулирует игрой.
+Оно не взаимодействует с игрой.
+Собранные данные не передаются третьим лицам
+(Собранные данные: марка устройства, модель устройства, информация о пинге)
+\n\n
+Разработчик: Ramazan Muslu
+\n
+Instagram: @ddr8ramazan
+\n
+Discord: @ramazan_developer</string>
+    <string name="about_app_back_button">Назад</string>
+
+    <string name="app_settings_title">Настройки приложения</string>
+    <string name="app_settings_language_select">Выбрать язык</string>
+    <string name="app_settings_language_current">Текущий язык: </string>
+    <string name="app_settings_back_button">Назад</string>
+
+    <string name="latency_logs_title">Журналы задержки</string>
+    <string name="latency_logs_highest">Самый высокий пинг</string>
+    <string name="latency_logs_lowest">Самый низкий пинг</string>
+    <string name="latency_logs_menu">Меню</string>
+    <string name="latency_logs_options">Параметры</string>
+    <string name="latency_logs_avarage">Средний пинг</string>
+    <string name="latency_logs_default">Пинг по умолчанию</string>
+    <string name="latency_logs_back">Назад</string>
+    <string name="latency_logs_ping">Пинг: </string>
+    <string name="latency_logs_date">Дата: </string>
+    <string name="latency_logs_ip">IP-адрес: </string>
+    <string name="latency_logs_refresh">Обновить</string>
+    <string name="latency_logs_deleteall">Удалить все</string>
+    <string name="latency_logs_filters">Фильтры</string>
+    <string name="latency_logs_filters_ip_addresses">IP-адреса</string>
+    <string name="latency_logs_filters_ip_addresses_all">Все</string>
+
+    <string name="premium_title">BSMS Premium</string>
+    <string name="premium_noads">Без рекламы навсегда</string>
+    <string name="premium_forever">Навсегда</string>
+    <string name="premium_sync_text">Синхронизировать покупку</string>
+    <string name="premium_back">Назад</string>
+
+    <string name="stats_title">Статистика</string>
+    <string name="stats_usage_time">Время использования</string>
+    <string name="stats_usage_time_hours">Часы</string>
+    <string name="stats_usage_time_minutes">Минуты</string>
+    <string name="stats_usage_time_seconds">Секунды</string>
+    <string name="stats_usage_datas">Использованные данные</string>
+    <string name="stats_latency">Статистика задержки</string>
+    <string name="stats_latency_open_with_logs">Открыть с журналами</string>
+    <string name="stats_latency_lowest">Самая низкая</string>
+    <string name="stats_latency_highest">Самая высокая</string>
+    <string name="stats_latency_avarage">Средняя</string>
+    <string name="stats_usage_datas_overlay">Отображать поверх</string>
+    <string name="stats_usage_datas_main_menu">Главное меню</string>
+    <string name="stats_usage_datas_total">Всего</string>
+    <string name="stats_ping_count">Количество отправленных пингов</string>
+    <string name="stats_ping_count_overlay">Отображать поверх</string>
+    <string name="stats_ping_count_main_menu">Главное меню</string>
+    <string name="stats_ping_count_total">Всего</string>
+
+    <string name="qs_button_default">Измеритель Пинга</string>
+    <string name="qs_button_active">Измеритель Пинга Активирован</string>
+</resources>

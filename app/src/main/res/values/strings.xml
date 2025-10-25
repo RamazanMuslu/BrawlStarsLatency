@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">Brawl Stars Ping Meter</string>
+
+    <string name="toast_langauge_changed">Language Has Changed</string>
+    <string name="toast_server_changed">Server Changed</string>
+    <string name="toast_refreshing_time_set_default">Refreshing Time Reset To 1000ms (1 Second)</string>
+    <string name="toast_error_permission_overlay">Text cannot be displayed without overlay permission.</string>
+    <string name="toast_overlay_text_hidden">Overlay text was hidden.</string>
+    <string name="toast_overlay_text_activate">Overlay text activated.</string>
+    <string name="toast_selected_color">Selected Color: </string>
+    <string name="toast_settings_saved">Settings Saved!</string>
+    <string name="toast_deeplink_invalid_server_name">Invalid Server Name</string>
+    <string name="toast_update_control_error">An Error Occourred</string>
+    <string name="toast_latency_logs_deleted">Latency Logs Deleted</string>
+    <string name="toast_premium_features_coming_soon">Premium Features Coming Soon</string>
+
+    <string name="color_unknown">Unknown Color</string>
+    <string name="color_black">Black</string>
+    <string name="color_white">White</string>
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_green">Green</string>
+
+    <string name="overlay_enter_url_hint">Error: Server Not Found!</string>
+    <string name="overlay_invalid_url">Error: Server URL Invalid!</string>
+    <string name="overlay_ping_error_connection">Error: Connection Error!</string>
+    <string name="overlay_ping_failed">Error: Connection Failed!</string>
+    <string name="overlay_ping_text">Ping: </string>
+    <string name="overlay_ip_address_access_error">IP address could not be obtained.</string>
+    <string name="overlay_menu_close_app">Close App</string>
+    <string name="overlay_menu_settings">Settings</string>
+
+    <string name="main_ping_text">Ping: 999ms</string>
+    <string name="main_activate_overlay_toogle_activate">Activate Overlay Text</string>
+    <string name="main_activate_overlay_toogle_disable">Disable Overlay Text</string>
+    <string name="main_feeding_section">Select Server</string>
+    <string name="main_text_options">Text Options</string>
+    <string name="main_app_settings">App Settings</string>
+    <string name="main_about_app">About App</string>
+    <string name="main_close_app">Close App</string>
+    <string name="main_latency_logs">Latency Records</string>
+    <string name="main_app_build_name">Version: </string>
+    <string name="main_app_build_code">Build: </string>
+    <string name="main_app_stats">App Statistics</string>
+    <string name="main_fast">Quick Actions</string>
+    <string name="main_options">Settings</string>
+
+    <string name="feeding_section_title">Select Server</string>
+    <string name="feeding_section_refreshing_time">Refreshing Time: </string>
+    <string name="feeding_section_refreshing_time_current">Current Refresh Time (MilliSecond): </string>
+    <string name="feeding_section_refreshing_time_default">Default Settings</string>
+    <string name="feeding_section_refreshing_time_warning">
+This setting measures the delay per
+selected time period. Lower speeds may provide more
+information but use more CPU power, so they are not
+recommended for older devices. The default setting is
+1 second.</string>
+    <string name="feeding_section_refreshing_time_warning_data">
+The lower the speed you choose, the more data it consumes.
+On average, each ping check consumes about 60b of data (less than 1/10th of a Kb).
+For example, with a 0.5-second setting, it will send 2 pings per second, consuming 120b of data per second.</string>
+    <string name="feeding_section_current_server">Current Server: </string>
+    <string name="feeding_section_back_button">Back</string>
+
+    <string name="text_options_title">Text Options</string>
+    <string name="text_options_text_size">Text Size: </string>
+    <string name="text_options_text_size_current_size">Current Size: </string>
+    <string name="text_options_background_size">Background Size: </string>
+    <string name="text_options_background_size_current_scale">Current Size: </string>
+    <string name="text_options_text_color">Text Color: </string>
+    <string name="text_options_text_color_white">White</string>
+    <string name="text_options_text_color_red">Red</string>
+    <string name="text_options_text_color_blue">Blue</string>
+    <string name="text_options_text_color_black">Black</string>
+    <string name="text_options_text_color_green">Green</string>
+    <string name="text_options_text_color_current">Current Color: </string>
+    <string name="text_option_latency_image_visibility">Latency Image Visibility: </string>
+    <string name="text_option_latency_image_visibility_current">Current Image Visibility: </string>
+    <string name="text_option_latency_text_visibility">Latency Text Visibility: </string>
+    <string name="text_option_latency_text_visibility_current">Current Text Visibility: </string>
+    <string name="text_option_latency_close_visibility">Close Button Visibility: </string>
+    <string name="text_option_latency_close_visibility_current">Current Button Visibility: </string>
+    <string name="text_options_main_menu_ping_meter_visibility">Ping Preview Indicator</string>
+    <string name="text_options_main_menu_ping_meter_visibility_current">Current Visibility</string>
+    <string name="text_options_main_menu_ping_meter_visibility_warning">
+    This setting consumes more data. It pings at 1-second intervals for preview purposes.
+    It consumes approximately 60B of data per second.
+</string>
+    <string name="text_option_visibility_types_visible">Visible</string>
+    <string name="text_option_visibility_types_hidden">Hidden</string>
+    <string name="text_option_visibility_types_hide">Hide</string>
+    <string name="text_option_visibility_types_show">Show</string>
+    <string name="text_options_save_and_apply">Save And Apply Changes</string>
+    <string name="text_options_back_button">Back</string>
+
+    <string name="about_app_title">About App</string>
+    <string name="about_app_about_text">
+This application works for games such
+as Brawl Stars that run on Amazon Web Services infrastructure.
+Its purpose is to measure the communication speed with a server
+of your choice within a specified time and display it on the screen.
+You can customize the text on the screen as you wish (color, size, and position).
+\n\n
+This application was not developed or supported by Supercell or Amazon
+It is entirely fan-created content. Thank you for your interest.
+\n\n
+This application is not a cheat software.
+It does not manipulate the game.
+It does not communicate with the game.
+The collected data is not shared with third parties
+(Collected data: device brand, device model, ping information)
+\n\n
+Developer: Ramazan Muslu
+\n
+Instagram: @ddr8ramazan
+\n
+Discord: @ramazan_developer</string>
+    <string name="about_app_back_button">Back</string>
+
+    <string name="app_settings_title">App Settings</string>
+    <string name="app_settings_language_select">Select Language</string>
+    <string name="app_settings_language_current">Current Language: </string>
+    <string name="app_settings_back_button">Back</string>
+
+    <string name="latency_logs_title">Latency Records</string>
+    <string name="latency_logs_highest">Highest Ping</string>
+    <string name="latency_logs_menu">Menu</string>
+    <string name="latency_logs_options">Options</string>
+    <string name="latency_logs_lowest">Lowest Ping</string>
+    <string name="latency_logs_avarage">Avarage Ping</string>
+    <string name="latency_logs_default">Default Ping</string>
+    <string name="latency_logs_back">Back</string>
+    <string name="latency_logs_ping">Ping: </string>
+    <string name="latency_logs_date">Date: </string>
+    <string name="latency_logs_ip">IP Address: </string>
+    <string name="latency_logs_refresh">Refresh</string>
+    <string name="latency_logs_deleteall">Delete All</string>
+    <string name="latency_logs_filters">Filters</string>
+    <string name="latency_logs_filters_ip_addresses">IP Addresses</string>
+    <string name="latency_logs_filters_ip_addresses_all">All</string>
+
+    <string name="premium_title">BSMS Premium</string>
+    <string name="premium_noads">No ADs Forever</string>
+    <string name="premium_forever">Forever</string>
+    <string name="premium_sync_text">Sync Purchase</string>
+    <string name="premium_back">Back</string>
+
+    <string name="stats_title">Statistics</string>
+    <string name="stats_usage_time">Usage Time</string>
+    <string name="stats_usage_time_hours">Hours</string>
+    <string name="stats_usage_time_minutes">Minutes</string>
+    <string name="stats_usage_time_seconds">Seconds</string>
+    <string name="stats_usage_datas">Data Usage</string>
+    <string name="stats_usage_datas_overlay">Overlay</string>
+    <string name="stats_usage_datas_main_menu">Main Menu</string>
+    <string name="stats_usage_datas_total">Total</string>
+    <string name="stats_latency">Latency Statistics</string>
+    <string name="stats_latency_open_with_logs">View Logs</string>
+    <string name="stats_latency_lowest">Lowest</string>
+    <string name="stats_latency_highest">Highest</string>
+    <string name="stats_latency_avarage">Average</string>
+    <string name="stats_ping_count">Ping Count</string>
+    <string name="stats_ping_count_overlay">Overlay</string>
+    <string name="stats_ping_count_main_menu">Main Menu</string>
+    <string name="stats_ping_count_total">Total</string>
+
+    <string name="qs_button_default">Ping Meter</string>
+    <string name="qs_button_active">Ping Meter Active</string>
+</resources>

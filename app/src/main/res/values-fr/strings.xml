@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Brawl Stars Ping-Mètre</string>
+
+    <string name="toast_langauge_changed">La langue a été changée</string>
+    <string name="toast_server_changed">Serveur changé</string>
+    <string name="toast_refreshing_time_set_default">Temps de rafraîchissement réinitialisé à 1000 ms (1 seconde)</string>
+    <string name="toast_error_permission_overlay">Le texte ne peut pas être affiché sans l\'autorisation de superposition.</string>
+    <string name="toast_overlay_text_hidden">Le texte en superposition a été masqué.</string>
+    <string name="toast_overlay_text_activate">Texte en superposition activé.</string>
+    <string name="toast_selected_color">Couleur sélectionnée : </string>
+    <string name="toast_settings_saved">Paramètres enregistrés !</string>
+    <string name="toast_deeplink_invalid_server_name">Nom de serveur invalide</string>
+    <string name="toast_update_control_error">Une erreur est survenue</string>
+    <string name="toast_latency_logs_deleted">Journaux de latence supprimés</string>
+    <string name="toast_premium_features_coming_soon">Fonctionnalités premium bientôt disponibles</string>
+
+    <string name="color_unknown">Couleur inconnue</string>
+    <string name="color_black">Noir</string>
+    <string name="color_white">Blanc</string>
+    <string name="color_red">Rouge</string>
+    <string name="color_blue">Bleu</string>
+    <string name="color_green">Vert</string>
+
+    <string name="overlay_enter_url_hint">Erreur : Serveur introuvable !</string>
+    <string name="overlay_invalid_url">Erreur : URL de serveur invalide !</string>
+    <string name="overlay_ping_error_connection">Erreur : Erreur de connexion !</string>
+    <string name="overlay_ping_failed">Erreur : Connexion échouée !</string>
+    <string name="overlay_ping_text">Ping : </string>
+    <string name="overlay_ip_address_access_error">Impossible d\'obtenir l\'adresse IP.</string>
+    <string name="overlay_menu_close_app">Fermer l\'application</string>
+    <string name="overlay_menu_settings">Paramètres</string>
+
+    <string name="main_ping_text">Ping : 999 ms</string>
+    <string name="main_activate_overlay_toogle_activate">Activer le texte en superposition</string>
+    <string name="main_activate_overlay_toogle_disable">Désactiver le texte en superposition</string>
+    <string name="main_feeding_section">Sélectionner un serveur</string>
+    <string name="main_text_options">Options de texte</string>
+    <string name="main_app_settings">Paramètres de l\'application</string>
+    <string name="main_about_app">À propos de l\'application</string>
+    <string name="main_close_app">Fermer l\'application</string>
+    <string name="main_app_build_name">Version : </string>
+    <string name="main_app_build_code">Build : </string>
+    <string name="main_latency_logs">Enregistrements de latence</string>
+    <string name="main_app_stats">Statistiques d\'application</string>
+    <string name="main_fast">Actions rapides</string>
+    <string name="main_options">Paramètres</string>
+
+    <string name="feeding_section_title">Sélectionner un serveur</string>
+    <string name="feeding_section_refreshing_time">Temps de rafraîchissement : </string>
+    <string name="feeding_section_refreshing_time_current">Temps de rafraîchissement actuel (millisecondes) : </string>
+    <string name="feeding_section_refreshing_time_default">Paramètres par défaut</string>
+    <string name="feeding_section_refreshing_time_warning">
+Ce paramètre mesure le délai pour chaque
+période de temps sélectionnée. Des valeurs plus basses peuvent fournir
+plus d\'informations, mais utilisent plus de puissance CPU, elles ne sont donc
+pas recommandées pour les appareils plus anciens. Le paramètre par défaut est
+1 seconde.</string>
+    <string name="feeding_section_refreshing_time_warning_data">
+Plus la vitesse que vous choisissez est basse, plus elle consomme de données.
+En moyenne, chaque vérification de ping consomme environ 60b de données (moins d\'un dixième d\'un Ko).
+Par exemple, avec un réglage de 0,5 seconde, il enverra 2 pings par seconde, consommant ainsi 120b de données par seconde.</string>
+    <string name="feeding_section_current_server">Serveur actuel : </string>
+    <string name="feeding_section_back_button">Retour</string>
+
+    <string name="text_options_title">Options de texte</string>
+    <string name="text_options_text_size">Taille du texte : </string>
+    <string name="text_options_text_size_current_size">Taille actuelle : </string>
+    <string name="text_options_background_size">Background Size: </string> <!-- TODO -->
+    <string name="text_options_background_size_current_scale">Current Size: </string> <!-- TODO -->
+    <string name="text_options_text_color">Couleur du texte : </string>
+    <string name="text_options_text_color_white">Blanc</string>
+    <string name="text_options_text_color_red">Rouge</string>
+    <string name="text_options_text_color_blue">Bleu</string>
+    <string name="text_options_text_color_black">Noir</string>
+    <string name="text_options_text_color_green">Vert</string>
+    <string name="text_options_text_color_current">Couleur actuelle : </string>
+    <string name="text_option_latency_image_visibility">Visibilité de l\'image de latence : </string>
+    <string name="text_option_latency_image_visibility_current">Visibilité actuelle de l\'image : </string>
+    <string name="text_option_latency_text_visibility">Visibilité du texte de latence : </string>
+    <string name="text_option_latency_text_visibility_current">Visibilité actuelle du texte : </string>
+    <string name="text_option_latency_close_visibility">Visibilité du bouton de fermeture : </string>
+    <string name="text_option_latency_close_visibility_current">Visibilité actuelle du bouton : </string>
+    <string name="text_options_main_menu_ping_meter_visibility">Indicateur de prévisualisation du ping</string>
+    <string name="text_options_main_menu_ping_meter_visibility_current">Visibilité actuelle</string>
+    <string name="text_options_main_menu_ping_meter_visibility_warning">
+    Ce paramètre consomme plus de données. Il effectue un ping à des intervalles d\'une seconde pour la prévisualisation.
+    Il consomme environ 60 B de données par seconde.
+</string>
+
+    <string name="text_option_visibility_types_visible">Visible</string>
+    <string name="text_option_visibility_types_hidden">Masqué</string>
+    <string name="text_option_visibility_types_hide">Masquer</string>
+    <string name="text_option_visibility_types_show">Afficher</string>
+    <string name="text_options_save_and_apply">Enregistrer et appliquer les changements</string>
+    <string name="text_options_back_button">Retour</string>
+
+    <string name="about_app_title">À propos de l\'application</string>
+    <string name="about_app_about_text">
+Cette application fonctionne pour des jeux comme
+Brawl Stars, qui tournent sur l\'infrastructure Amazon Web Services.
+Son but est de mesurer la vitesse de communication avec un serveur
+de votre choix dans un temps spécifié et de l\'afficher à l\'écran.
+Vous pouvez personnaliser le texte à l\'écran comme vous le souhaitez (couleur, taille et position).
+\n\n
+Cette application n\'a pas été développée ou n\'est pas supportée par Supercell ou Amazon.
+C\'est un contenu entièrement créé par des fans. Merci pour votre intérêt.
+\n\n
+Cette application n\'est pas un logiciel de triche.
+Elle ne manipule pas le jeu.
+Elle ne communique pas avec le jeu.
+Les données collectées ne sont pas partagées avec des tiers.
+(Données collectées : marque de l\'appareil, modèle de l\'appareil, informations de ping)
+\n\n
+Développeur : Ramazan Muslu
+\n
+Instagram : @ddr8ramazan
+\n
+Discord : @ramazan_developer</string>
+    <string name="about_app_back_button">Retour</string>
+
+    <string name="app_settings_title">Paramètres de l\'application</string>
+    <string name="app_settings_language_select">Sélectionner la langue</string>
+    <string name="app_settings_language_current">Langue actuelle : </string>
+    <string name="app_settings_back_button">Retour</string>
+
+    <string name="latency_logs_title">Enregistrements de latence</string>
+    <string name="latency_logs_highest">Ping le plus élevé</string>
+    <string name="latency_logs_lowest">Ping le plus bas</string>
+    <string name="latency_logs_avarage">Ping moyen</string>
+    <string name="latency_logs_menu">Menu</string>
+    <string name="latency_logs_options">Options</string>
+    <string name="latency_logs_default">Ping par défaut</string>
+    <string name="latency_logs_back">Retour</string>
+    <string name="latency_logs_ping">Ping: </string>
+    <string name="latency_logs_date">Date: </string>
+    <string name="latency_logs_ip">Adresse IP: </string>
+    <string name="latency_logs_refresh">Actualiser</string>
+    <string name="latency_logs_deleteall">Tout supprimer</string>
+    <string name="latency_logs_filters">Filtres</string>
+    <string name="latency_logs_filters_ip_addresses">Adresses IP</string>
+    <string name="latency_logs_filters_ip_addresses_all">Tout</string>
+
+    <string name="premium_title">BSMS Premium</string>
+    <string name="premium_noads">Sans publicité pour toujours</string>
+    <string name="premium_forever">Pour toujours</string>
+    <string name="premium_sync_text">Synchroniser l\'achat</string>
+    <string name="premium_back">Retour</string>
+
+    <string name="stats_title">Statistiques</string>
+    <string name="stats_usage_time">Durée d\'utilisation</string>
+    <string name="stats_usage_time_hours">Heures</string>
+    <string name="stats_usage_time_minutes">Minutes</string>
+    <string name="stats_usage_time_seconds">Secondes</string>
+    <string name="stats_usage_datas">Données consommées</string>
+    <string name="stats_latency">Statistiques de latence</string>
+    <string name="stats_latency_open_with_logs">Afficher les journaux</string>
+    <string name="stats_latency_lowest">Le plus bas</string>
+    <string name="stats_latency_highest">Le plus élevé</string>
+    <string name="stats_latency_avarage">Moyen</string>
+    <string name="stats_usage_datas_overlay">Afficher en superposition</string>
+    <string name="stats_usage_datas_main_menu">Menu principal</string>
+    <string name="stats_usage_datas_total">Total</string>
+    <string name="stats_ping_count">Nombre de Pings</string>
+    <string name="stats_ping_count_overlay">Afficher en superposition</string>
+    <string name="stats_ping_count_main_menu">Menu principal</string>
+    <string name="stats_ping_count_total">Total</string>
+
+    <string name="qs_button_default">Compteur de Ping</string>
+    <string name="qs_button_active">Compteur de Ping Actif</string>
+</resources>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2c"
+    tools:context=".TextSettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_options_title"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnTextSettings_BackMain"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:src="@mipmap/ic_arrow_down_foreground"
+            android:rotation="90"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btnSaveTextSettings"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#3A3A3A"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvLatencyOnMainMenuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_options_main_menu_ping_meter_visibility"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/tvLatencyOnMainMenuVisibilityOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/tvLatencyOnMainMenuTitle">
+
+                    <Button
+                        android:id="@+id/btnLatencyOnMainMenu_VisibilityTrue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_show"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnLatencyOnMainMenu_VisibilityFalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_hide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLatencyOnMainMenu_VisibilityCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/text_options_main_menu_ping_meter_visibility_current"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLatencyOnMainMenuVisibilityOptions" />
+
+                <TextView
+                    android:id="@+id/tvLatencyOnMainMenu_VisibilityWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/text_options_main_menu_ping_meter_visibility_warning"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLatencyOnMainMenu_VisibilityCurrent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#3A3A3A"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvTextSizeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_options_text_size"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTextSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:max="50"
+                    android:min="10"
+                    android:progress="20"
+                    android:progressTint="#FFFFFF"
+                    android:thumbTint="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextSizeTitle" />
+
+                <TextView
+                    android:id="@+id/tvCurrentTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/text_options_text_size_current_size"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/seekBarTextSize" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#3A3A3A"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvBackgroundSizeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_options_background_size"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/seekBarBackgroundSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:max="100"
+                    android:min="0"
+                    android:progress="50"
+                    android:progressTint="#FFFFFF"
+                    android:thumbTint="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvBackgroundSizeTitle" />
+
+                <TextView
+                    android:id="@+id/tvCurrentBackgroundSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/text_options_background_size_current_scale"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/seekBarBackgroundSize" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#3A3A3A"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvTextColorTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_options_text_color"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/colorButtonsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextColorTitle">
+
+                    <Button
+                        android:id="@+id/btnColorGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#00FF0B"
+                        android:text="@string/text_options_text_color_green"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btnColorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="@string/text_options_text_color_white"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCurrentTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/text_options_text_color_current"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/colorButtonsLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#3A3A3A"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvLatencyImageVisibilityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_option_latency_image_visibility"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/latencyImageButtonsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/tvLatencyImageVisibilityTitle">
+
+                    <Button
+                        android:id="@+id/btnLatencyImage_VisibilityTrue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_show"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnLatencyImage_VisibilityFalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_hide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCurrentLatencyImage_Visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/text_option_latency_image_visibility_current"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/latencyImageButtonsLayout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#3A3A3A"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvLatencyTextVisibilityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_option_latency_text_visibility"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/latencyTextButtonsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/tvLatencyTextVisibilityTitle">
+
+                    <Button
+                        android:id="@+id/btnLatencyText_VisibilityTrue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_show"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnLatencyText_VisibilityFalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_hide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCurrentLatencyText_Visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/text_option_latency_text_visibility_current"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/latencyTextButtonsLayout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#3A3A3A"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvLatencyCloseBtnVisibilityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_option_latency_close_visibility"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/latencyCloseBtnButtonsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/tvLatencyCloseBtnVisibilityTitle">
+
+                    <Button
+                        android:id="@+id/btnLatencyCloseBtn_VisibilityTrue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_show"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnLatencyCloseBtn_VisibilityFalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#1C00FF"
+                        android:text="@string/text_option_visibility_types_hide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCurrentLatencyCloseBtn_Visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/text_option_latency_close_visibility_current"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/latencyCloseBtnButtonsLayout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSaveTextSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="100sp"
+        android:text="@string/text_options_save_and_apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
