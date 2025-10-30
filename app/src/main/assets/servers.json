@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "name": "AP/India",
+    "url": "https://dynamodb.ap-south-1.amazonaws.com"
+  },
+  {
+    "id": 2,
+    "name": "AP/Singapore",
+    "url": "https://dynamodb.ap-southeast-1.amazonaws.com"
+  },
+  {
+    "id": 3,
+    "name": "AP/HongKong",
+    "url": "https://dynamodb.ap-east-1.amazonaws.com"
+  },
+  {
+    "id": 4,
+    "name": "AP/Japan",
+    "url": "https://dynamodb.ap-northeast-1.amazonaws.com"
+  },
+  {
+    "id": 5,
+    "name": "EU/Italy",
+    "url": "https://dynamodb.eu-south-1.amazonaws.com"
+  },
+  {
+    "id": 6,
+    "name": "EU/Ireland",
+    "url": "https://dynamodb.eu-west-1.amazonaws.com"
+  },
+  {
+    "id": 7,
+    "name": "AP/Sydney",
+    "url": "https://dynamodb.ap-southeast-2.amazonaws.com"
+  },
+  {
+    "id": 8,
+    "name": "EU/Finland",
+    "url": "https://dynamodb.eu-north-1.amazonaws.com"
+  },
+  {
+    "id": 9,
+    "name": "NA/Virginia",
+    "url": "https://dynamodb.us-east-1.amazonaws.com"
+  },
+  {
+    "id": 10,
+    "name": "ME/Bahrain",
+    "url": "https://dynamodb.me-south-1.amazonaws.com"
+  },
+  {
+    "id": 11,
+    "name": "NA/LosAngeles",
+    "url": "https://dynamodb.us-west-2.amazonaws.com"
+  },
+  {
+    "id": 12,
+    "name": "NA/Oregon",
+    "url": "https://dynamodb.us-west-2.amazonaws.com"
+  },
+  {
+    "id": 13,
+    "name": "NA/Dallas",
+    "url": "https://dynamodb.us-east-1.amazonaws.com"
+  },
+  {
+    "id": 14,
+    "name": "NA/Miami",
+    "url": "https://dynamodb.us-east-1.amazonaws.com"
+  },
+  {
+    "id": 15,
+    "name": "SA/Peru",
+    "url": "https://dynamodb.us-east-1.amazonaws.com"
+  },
+  {
+    "id": 16,
+    "name": "SA/Chile",
+    "url": "https://dynamodb.us-east-1.amazonaws.com"
+  },
+  {
+    "id": 17,
+    "name": "SA/Brasil-1",
+    "url": "https://dynamodb.sa-east-1.amazonaws.com"
+  },
+  {
+    "id": 18,
+    "name": "EU/Germany-1",
+    "url": "https://dynamodb.eu-central-1.amazonaws.com"
+  },
+  {
+    "id": 19,
+    "name": "EU/Germany-2",
+    "url": "https://dynamodb.eu-central-2.amazonaws.com"
+  }
+]

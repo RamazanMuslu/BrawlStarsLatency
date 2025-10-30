@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"> <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="25dp"
+    android:paddingHorizontal="16dp">
+
+
+    <ImageView
+        android:id="@+id/btn_back_from_update"
+        android:layout_width="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="32dp"
+        android:src="@mipmap/ic_arrow_down_foreground"
+        android:rotation="90"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@android:color/white"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v7_check_for_update_title"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/btn_back_from_update"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333333"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_update_status_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_app_logo"
+            app:tint="#BB86FC"
+            android:contentDescription="Durum İkonu"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/text_main_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/v7_check_for_update_up_to_date"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_detail_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/v7_check_for_update_last_control"
+            android:textColor="#A0A0A0"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_update_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:text="Güncelleme Kontrol Durumu"
+            android:textColor="@android:color/darker_gray"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_update_check_full"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="#BB86FC"
+            android:visibility="gone"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btn_update_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/v7_check_for_update_download_update"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#BB86FC"
+            android:paddingVertical="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"/>
+
+        <Button
+            android:id="@+id/btn_check_for_updates_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/v7_check_for_update_control"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#BB86FC"
+            android:paddingVertical="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

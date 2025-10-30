@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/server_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="8dp">
+
+    <TextView
+        android:id="@+id/text_server_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AP/India"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_server_ping"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/text_server_status_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Yüksek Yük"
+        android:textColor="#03DAC5"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_server_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_server_ping"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/image_server_selected_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_app_logo"
+        app:tint="#03DAC5"
+        android:contentDescription="Seçili Sunucu"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/text_server_ping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="285ms"
+        android:textColor="#BB86FC"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/image_server_selected_indicator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
