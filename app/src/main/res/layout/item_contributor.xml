@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/text_contributor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ramazan Muslu"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_contributor_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v7_credits_project_development"
+        android:textColor="#03DAC5"
+        android:textSize="13sp" />
+
+</LinearLayout>

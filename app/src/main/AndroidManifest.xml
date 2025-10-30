@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/full_backup_content"
+        android:icon="@drawable/ic_app_logo"
+        android:label="Ping Meter"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OverlayLatency"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".v7_MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".OverlayService" android:enabled="true" android:exported="false" />
+        <activity android:name=".v7_AppSettingsActivity" android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".FeedingSectionActivity" />
+        <activity android:name=".v7_ChangeLanguage" />
+        <activity android:name=".v7_ChangeServer" />
+        <activity android:name=".v7_VersionCheck" />
+        <activity android:name=".v7_ContributorsMenu" />
+        <activity android:name=".v7_AboutApp" />
+        <activity android:name=".LatencyLogsActivity" />
+        <activity android:name=".StatsActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+</manifest>

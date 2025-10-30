@@ -1,0 +1,252 @@
+<resources>
+    <string name="app_name">Brawl Stars Ping-Messer</string>
+
+    <string name="toast_langauge_changed">Sprache wurde geändert</string>
+    <string name="toast_server_changed">Server wurde geändert</string>
+    <string name="toast_refreshing_time_set_default">Aktualisierungszeit auf 1000 ms (1 Sekunde) zurückgesetzt</string>
+    <string name="toast_error_permission_overlay">Text kann ohne Overlay-Berechtigung nicht angezeigt werden.</string>
+    <string name="toast_overlay_text_hidden">Overlay-Text wurde ausgeblendet.</string>
+    <string name="toast_overlay_text_activate">Overlay-Text aktiviert.</string>
+    <string name="toast_selected_color">Gewählte Farbe: </string>
+    <string name="toast_settings_saved">Einstellungen gespeichert!</string>
+    <string name="toast_deeplink_invalid_server_name">Ungültiger Servername</string>
+    <string name="toast_update_control_error">Ein Fehler ist aufgetreten</string>
+    <string name="toast_latency_logs_deleted">Latenzprotokolle gelöscht</string>
+    <string name="toast_premium_features_coming_soon">Premium-Funktionen kommen bald</string>
+
+    <string name="color_unknown">Unbekannte Farbe</string>
+    <string name="color_black">Schwarz</string>
+    <string name="color_white">Weiß</string>
+    <string name="color_red">Rot</string>
+    <string name="color_blue">Blau</string>
+    <string name="color_green">Grün</string>
+
+    <string name="overlay_enter_url_hint">Fehler: Server nicht gefunden!</string>
+    <string name="overlay_invalid_url">Fehler: Server-URL ungültig!</string>
+    <string name="overlay_ping_error_connection">Fehler: Verbindungsfehler!</string>
+    <string name="overlay_ping_failed">Fehler: Verbindung fehlgeschlagen!</string>
+    <string name="overlay_ping_text">Ping: </string>
+    <string name="overlay_ip_address_access_error">IP-Adresse konnte nicht bezogen werden.</string>
+    <string name="overlay_menu_close_app">App schließen</string>
+    <string name="overlay_menu_settings">Einstellungen</string>
+
+    <string name="main_ping_text">Ping: 999 ms</string>
+    <string name="main_activate_overlay_toogle_activate">Overlay-Text aktivieren</string>
+    <string name="main_activate_overlay_toogle_disable">Overlay-Text deaktivieren</string>
+    <string name="main_feeding_section">Server auswählen</string>
+    <string name="main_text_options">Textoptionen</string>
+    <string name="main_app_settings">App-Einstellungen</string>
+    <string name="main_about_app">Über die App</string>
+    <string name="main_close_app">App schließen</string>
+    <string name="main_app_build_name">Version: </string>
+    <string name="main_app_build_code">Build: </string>
+    <string name="main_latency_logs">Latenzaufzeichnungen</string>
+    <string name="main_app_stats">App-Statistiken</string>
+    <string name="main_fast">Schnelle Aktionen</string>
+    <string name="main_options">Einstellungen</string>
+
+    <string name="feeding_section_title">Server auswählen</string>
+    <string name="feeding_section_refreshing_time">Aktualisierungszeit: </string>
+    <string name="feeding_section_refreshing_time_current">Aktuelle Aktualisierungszeit (Millisekunden): </string>
+    <string name="feeding_section_refreshing_time_default">Standardeinstellungen</string>
+    <string name="feeding_section_refreshing_time_warning">
+Diese Einstellung misst die Verzögerung pro
+ausgewähltem Zeitraum. Niedrigere Werte können mehr
+Informationen liefern, verbrauchen aber mehr CPU-Leistung und werden daher
+für ältere Geräte nicht empfohlen. Die Standardeinstellung ist
+1 Sekunde.</string>
+    <string name="feeding_section_refreshing_time_warning_data">
+Je niedriger die von Ihnen gewählte Geschwindigkeit ist, desto mehr Daten werden verbraucht.
+Im Durchschnitt verbraucht jede Ping-Prüfung etwa 60b Daten (weniger als 1/10 eines KB).
+Zum Beispiel verbraucht eine Einstellung von 0,5 Sekunden 120b Daten pro Sekunde, da sie zweimal pro Sekunde pingen wird.</string>
+    <string name="feeding_section_current_server">Aktueller Server: </string>
+    <string name="feeding_section_back_button">Zurück</string>
+
+    <string name="text_options_title">Textoptionen</string>
+    <string name="text_options_text_size">Textgröße: </string>
+    <string name="text_options_text_size_current_size">Aktuelle Größe: </string>
+    <string name="text_options_background_size">Background Size: </string> <!-- TODO -->
+    <string name="text_options_background_size_current_scale">Current Size: </string> <!-- TODO -->
+    <string name="text_options_text_color">Textfarbe: </string>
+    <string name="text_options_text_color_white">Weiß</string>
+    <string name="text_options_text_color_red">Rot</string>
+    <string name="text_options_text_color_blue">Blau</string>
+    <string name="text_options_text_color_black">Schwarz</string>
+    <string name="text_options_text_color_green">Grün</string>
+    <string name="text_options_text_color_current">Aktuelle Farbe: </string>
+    <string name="text_option_latency_image_visibility">Sichtbarkeit des Latenzbildes: </string>
+    <string name="text_option_latency_image_visibility_current">Aktuelle Bildsichtbarkeit: </string>
+    <string name="text_option_latency_text_visibility">Sichtbarkeit des Latenztextes: </string>
+    <string name="text_option_latency_text_visibility_current">Aktuelle Textsichtbarkeit: </string>
+    <string name="text_option_latency_close_visibility">Sichtbarkeit der Schließen-Schaltfläche: </string>
+    <string name="text_option_latency_close_visibility_current">Aktuelle Schaltflächensichtbarkeit: </string>
+    <string name="text_options_main_menu_ping_meter_visibility">Vorschauanzeige für Ping</string>
+    <string name="text_options_main_menu_ping_meter_visibility_current">Aktuelle Sichtbarkeit</string>
+    <string name="text_options_main_menu_ping_meter_visibility_warning">
+    Diese Einstellung verbraucht mehr Daten. Für die Vorschau wird der Ping in 1-Sekunden-Intervallen gemessen.
+    Dadurch werden etwa 60B Daten pro Sekunde verbraucht.
+</string>
+    <string name="text_option_visibility_types_visible">Sichtbar</string>
+    <string name="text_option_visibility_types_hidden">Versteckt</string>
+    <string name="text_option_visibility_types_hide">Verstecken</string>
+    <string name="text_option_visibility_types_show">Anzeigen</string>
+    <string name="text_options_save_and_apply">Änderungen speichern und anwenden</string>
+    <string name="text_options_back_button">Zurück</string>
+
+    <string name="about_app_title">Über die App</string>
+    <string name="about_app_about_text">
+Diese Anwendung funktioniert für Spiele wie
+Brawl Stars, die auf der Amazon Web Services-Infrastruktur laufen.
+Ihr Zweck ist es, die Kommunikationsgeschwindigkeit mit einem Server
+Ihrer Wahl innerhalb einer bestimmten Zeit zu messen und auf dem Bildschirm anzuzeigen.
+Sie können den Text auf dem Bildschirm nach Belieben anpassen (Farbe, Größe und Position).
+\n\n
+Diese Anwendung wurde nicht von Supercell oder Amazon entwickelt oder unterstützt.
+Es handelt sich um vollständig von Fans erstellte Inhalte. Vielen Dank für Ihr Interesse.
+\n\n
+Diese Anwendung ist keine Cheat-Software.
+Sie manipuliert das Spiel nicht.
+Sie kommuniziert nicht mit dem Spiel.
+Die gesammelten Daten werden nicht an Dritte weitergegeben.
+(Gesammelte Daten: Gerätemarke, Gerätemodell, Ping-Informationen)
+\n\n
+Entwickler: Ramazan Muslu
+\n
+Instagram: @ddr8ramazan
+\n
+Discord: @ramazan_developer</string>
+    <string name="about_app_back_button">Zurück</string>
+
+    <string name="app_settings_title">App-Einstellungen</string>
+    <string name="app_settings_language_select">Sprache auswählen</string>
+    <string name="app_settings_language_current">Aktuelle Sprache: </string>
+    <string name="app_settings_back_button">Zurück</string>
+
+    <string name="latency_logs_title">Latenzaufzeichnungen</string>
+    <string name="latency_logs_highest">Höchster Ping</string>
+    <string name="latency_logs_menu">Menü</string>
+    <string name="latency_logs_options">Optionen</string>
+    <string name="latency_logs_lowest">Niedrigster Ping</string>
+    <string name="latency_logs_avarage">Durchschnittlicher Ping</string>
+    <string name="latency_logs_default">Standard-Ping</string>
+    <string name="latency_logs_back">Zurück</string>
+    <string name="latency_logs_ping">Ping: </string>
+    <string name="latency_logs_date">Datum: </string>
+    <string name="latency_logs_ip">IP-Adresse: </string>
+    <string name="latency_logs_refresh">Aktualisieren</string>
+    <string name="latency_logs_deleteall">Alle löschen</string>
+    <string name="latency_logs_filters">Filter</string>
+    <string name="latency_logs_filters_ip_addresses">IP-Adressen</string>
+    <string name="latency_logs_filters_ip_addresses_all">Alle</string>
+
+    <string name="premium_title">BSMS Premium</string>
+    <string name="premium_noads">Für immer werbefrei</string>
+    <string name="premium_forever">Für immer</string>
+    <string name="premium_sync_text">Kauf synchronisieren</string>
+    <string name="premium_back">Zurück</string>
+
+    <string name="stats_title">Statistiken</string>
+    <string name="stats_usage_time">Nutzungszeit</string>
+    <string name="stats_usage_time_hours">Stunden</string>
+    <string name="stats_usage_time_minutes">Minuten</string>
+    <string name="stats_usage_time_seconds">Sekunden</string>
+    <string name="stats_usage_datas">Verbrauchtes Datenvolumen</string>
+    <string name="stats_latency">Latenz-Statistiken</string>
+    <string name="stats_latency_open_with_logs">Protokolle anzeigen</string>
+    <string name="stats_latency_lowest">Niedrigste</string>
+    <string name="stats_latency_highest">Höchste</string>
+    <string name="stats_latency_avarage">Durchschnitt</string>
+    <string name="stats_usage_datas_overlay">Im Vordergrund anzeigen</string>
+    <string name="stats_usage_datas_main_menu">Hauptmenü</string>
+    <string name="stats_usage_datas_total">Gesamt</string>
+    <string name="stats_ping_count">Anzahl der Pings</string>
+    <string name="stats_ping_count_overlay">Im Vordergrund anzeigen</string>
+    <string name="stats_ping_count_main_menu">Hauptmenü</string>
+    <string name="stats_ping_count_total">Gesamt</string>
+
+    <string name="qs_button_default">Ping-Meter</string>
+    <string name="qs_button_active">Ping-Meter Aktiv</string>
+
+    <string name="v7_main_app_title">Brawl Stars Ping Meter</string>
+    <string name="v7_main_status_working">LÄUFT</string>
+    <string name="v7_main_status_not_working">LÄUFT NICHT</string>
+    <string name="v7_main_selected_server">Ausgewählter Server: </string>
+    <string name="v7_main_selected_server_automatic">Automatisch </string>
+    <string name="v7_main_start">STARTEN</string>
+    <string name="v7_main_stop">STOPPEN</string>
+    <string name="v7_main_activity_records">Activity Records</string> <!-- TODO -->
+
+    <string name="v7_settings_title">Einstellungen</string>
+    <string name="v7_settings_personalization">Personalisierung</string>
+    <string name="v7_settings_personalization_language">Sprache</string>
+    <string name="v7_settings_personalization_language_description">App-Sprache ändern </string>
+    <string name="v7_settings_personalization_language_description_current">Aktuell: </string>
+    <string name="v7_settings_personalization_text_size">Textgröße</string>
+    <string name="v7_settings_personalization_text_size_current">Aktuelle Größe: </string>
+    <string name="v7_settings_personalization_text_color">Textfarbe</string>
+    <string name="v7_settings_personalization_text_color_current">Aktuelle Farbe: </string>
+    <string name="v7_settings_personalization_icon_visibility">Sichtbarkeit des Latenz-Symbols</string>
+    <string name="v7_settings_personalization_icon_visibility_current">Aktueller Status: </string>
+    <string name="v7_settings_personalization_text_visibility">Sichtbarkeit des Latenz-Textes</string>
+    <string name="v7_settings_personalization_text_visibility_current">Aktueller Status: </string>
+    <string name="v7_settings_personalization_close_button_visibility">Sichtbarkeit der Schaltfläche \"Schließen\"</string>
+    <string name="v7_settings_personalization_close_button_visibility_current">Aktueller Status: </string>
+    <string name="v7_settings_network_and_performance">Netzwerk und Leistung</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection">Automatische Serverauswahl</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_selected">Ausgewählter Server</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_change">ÄNDERN</string>
+    <string name="v7_settings_network_and_performance_refreshing_time">Latenz-Intervall</string>
+    <string name="v7_settings_network_and_performance_refreshing_time_current">Millisekunden</string>
+    <string name="v7_settings_about">Über uns und Support</string>
+    <string name="v7_settings_about_check_for_update">Auf Updates prüfen</string>
+    <string name="v7_settings_about_check_for_update_description">Stellen Sie sicher, dass Sie die neueste Version haben</string>
+    <string name="v7_settings_about_about_us">Über uns</string>
+    <string name="v7_settings_about_about_us_description">Anwendungsinformationen und Versionsdetails</string>
+    <string name="v7_settings_about_credits">Mitwirkende</string>
+    <string name="v7_settings_about_credits_description">Vielen Dank an alle, die uns unterstützen!</string>
+    <string name="v7_settings_app_informations">Anwendungsinformationen</string>
+    <string name="v7_settings_app_informations_version">Version</string>
+    <string name="v7_settings_app_informations_last_update">Versions-Update</string>
+
+    <string name="v7_change_language_title">Sprache ändern</string>
+
+    <string name="v7_change_server_title">Server auswählen</string>
+    <string name="v7_change_server_refresh_all">Aktualisieren</string>
+
+    <string name="v7_check_for_update_title">Versionsprüfung</string>
+    <string name="v7_check_for_update_up_to_date">Ihre App ist aktuell!</string>
+    <string name="v7_check_for_update_new_update_avalible">Neues Update verfügbar: </string>
+    <string name="v7_check_for_update_last_control">Letzte Prüfung: </string>
+    <string name="v7_check_for_update_control">JETZT PRÜFEN</string>
+    <string name="v7_check_for_update_new_version_avalible">New version avalible: </string> <!-- TODO -->
+    <string name="v7_check_for_update_development_environment_enable">Development environment enable</string> <!-- TODO -->
+    <string name="v7_check_for_update_an_error_occurred">An error occurred!</string> <!-- TODO -->
+    <string name="v7_check_for_update_download_update">Download Update</string> <!-- TODO -->
+
+    <string name="v7_about_title">Über uns</string>
+    <string name="v7_about_app_version">Version: </string>
+    <string name="v7_about_general_info">ALLGEMEINE INFORMATIONEN</string>
+    <string name="v7_about_general_info_text">Diese Anwendung wurde zur Ping-Verfolgung für AWS-basierte Spiele entwickelt. Sie ist vollständig Open-Source und werbefrei. Sie wurde von mir (Ramazan Muslu) als Hobbyprojekt erstellt und entwickelt sich mit Unterstützung der Community weiter.</string>
+    <string name="v7_about_legal_info">RECHTLICHE HINWEISE</string>
+    <string name="v7_about_legal_info_title_1">Open Source Lizenzen</string>
+    <string name="v7_about_legal_info_title_1_description">MIT Lizenz</string>
+
+    <string name="v7_credits_title">Mitwirkende</string>
+    <string name="v7_credits_project">ENTWICKLER</string>
+    <string name="v7_credits_project_development">Hauptentwickler</string>
+    <string name="v7_credits_project_language_support">Sprachunterstützung: </string>
+
+    <string name="v7_currents_visible">Sichtbar</string>
+    <string name="v7_currents_hidden">Versteckt</string>
+
+    <string name="v7_color_white">Weiß</string>
+    <string name="v7_color_green">Grün</string>
+
+    <string name="v7_copy_text">© 2025 Yora Studio - Ramazan Muslu</string>
+
+    <!-- LATENCY LOGS MENU -->
+    <string name="v7_latency_logs_extract_logs">Extract Logs</string> <!-- TODO -->
+
+    <!-- TOASTS -->
+    <string name="v7_toast_error_permission_overlay">Text kann ohne Overlay-Berechtigung nicht angezeigt werden.</string>
+</resources>

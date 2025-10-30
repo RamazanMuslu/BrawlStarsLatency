@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/overlayBackgorund"
+    android:gravity="center_vertical"
+    android:padding="4dp"
+    android:background="#80000000">
+
+    <ImageView
+        android:id="@+id/overlayImageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@mipmap/ic_latency_icon_foreground"
+        android:visibility="visible"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/overlayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        android:padding="4dp"
+        android:text="@string/overlay_ping_text"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btnOverlayMenu"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@mipmap/ic_3_points_foreground"
+        android:visibility="visible"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="8dp" />
+
+    <LinearLayout
+        android:id="@+id/overlayMenuArea"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:background="#595858">
+
+        <TextView
+            android:id="@+id/btnOverlayClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/overlay_menu_close_app"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/btnOverlayOpenAppSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#FFFFFF"
+            android:text="@string/overlay_menu_settings"/>
+    </LinearLayout>
+</LinearLayout>
