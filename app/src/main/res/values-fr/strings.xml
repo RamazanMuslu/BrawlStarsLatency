@@ -167,4 +167,101 @@ Discord : @ramazan_developer</string>
 
     <string name="qs_button_default">Compteur de Ping</string>
     <string name="qs_button_active">Compteur de Ping Actif</string>
+
+    <!-- VERSION 7 UPGRADE -->
+
+    <!-- MAIN MENU -->
+    <string name="v7_main_app_title">Brawl Stars Ping Meter</string>
+    <string name="v7_main_status_working">FONCTIONNE</string>
+    <string name="v7_main_status_not_working">NE FONCTIONNE PAS</string>
+    <string name="v7_main_selected_server">Serveur sélectionné: </string>
+    <string name="v7_main_selected_server_automatic">Automatique </string>
+    <string name="v7_main_start">DÉMARRER</string>
+    <string name="v7_main_stop">ARRÊTER</string>
+    <string name="v7_main_activity_records">Historique d\'activité</string>
+
+    <!-- SETTINGS MENU -->
+    <string name="v7_settings_title">Paramètres</string>
+    <string name="v7_settings_personalization">Personnalisation</string>
+    <string name="v7_settings_personalization_language">Langue</string>
+    <string name="v7_settings_personalization_language_description">Changer la langue de l\'application </string>
+    <string name="v7_settings_personalization_language_description_current">Actuel: </string>
+    <string name="v7_settings_personalization_text_size">Taille du texte</string>
+    <string name="v7_settings_personalization_text_size_current">Taille actuelle: </string>
+    <string name="v7_settings_personalization_text_color">Couleur du texte</string>
+    <string name="v7_settings_personalization_text_color_current">Couleur actuelle: </string>
+    <string name="v7_settings_personalization_icon_visibility">Visibilité de l\'icône de latence</string>
+    <string name="v7_settings_personalization_icon_visibility_current">Statut actuel: </string>
+    <string name="v7_settings_personalization_text_visibility">Visibilité du texte de latence</string>
+    <string name="v7_settings_personalization_text_visibility_current">Statut actuel: </string>
+    <string name="v7_settings_personalization_close_button_visibility">Visibilité du bouton de fermeture</string>
+    <string name="v7_settings_personalization_close_button_visibility_current">Statut actuel: </string>
+    <string name="v7_settings_network_and_performance">Réseau et Performance</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection">Sélection automatique du serveur</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_selected">Serveur sélectionné</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_change">CHANGER</string>
+    <string name="v7_settings_network_and_performance_refreshing_time">Intervalle de latence</string>
+    <string name="v7_settings_network_and_performance_refreshing_time_current">Millisecondes</string>
+    <string name="v7_settings_about">À propos et Support</string>
+    <string name="v7_settings_about_check_for_update">Vérifier les mises à jour</string>
+    <string name="v7_settings_about_check_for_update_description">Assurez-vous d\'avoir la dernière version</string>
+    <string name="v7_settings_about_about_us">À propos de nous</string>
+    <string name="v7_settings_about_about_us_description">Informations sur l\'application et détails de la version</string>
+    <string name="v7_settings_about_credits">Contributeurs</string>
+    <string name="v7_settings_about_credits_description">Merci à tous ceux qui nous soutiennent!</string>
+    <string name="v7_settings_app_informations">Informations sur l\'application</string>
+    <string name="v7_settings_app_informations_version">Version</string>
+    <string name="v7_settings_app_informations_last_update">Mise à jour de la version</string>
+
+    <!-- LANGUAGE MENU -->
+    <string name="v7_change_language_title">Changer la langue</string>
+
+    <!-- SERVER LIST MENU -->
+    <string name="v7_change_server_title">Sélectionner le serveur</string>
+    <string name="v7_change_server_refresh_all">Actualiser</string>
+    <string name="v7_change_server_server_url_not_found">URL du serveur introuvable: </string>
+    <string name="v7_change_server_unavalible">Indisponible</string>
+    <string name="v7_change_server_low_load">Stable (Faible charge)</string>
+    <string name="v7_change_server_medium_load">Charge moyenne</string>
+    <string name="v7_change_server_heavy_load">Charge élevée</string>
+    <string name="v7_change_server_very_heavy_load">Charge très élevée</string>
+
+    <!-- VERSION CHECK MENU -->
+    <string name="v7_check_for_update_title">Vérification de la version</string>
+    <string name="v7_check_for_update_up_to_date">Votre application est à jour!</string>
+    <string name="v7_check_for_update_new_update_avalible">Nouvelle mise à jour disponible: </string>
+    <string name="v7_check_for_update_last_control">Dernière vérification: </string>
+    <string name="v7_check_for_update_control">VÉRIFIER MAINTENANT</string>
+    <string name="v7_check_for_update_new_version_avalible">Nouvelle version disponible: </string>
+    <string name="v7_check_for_update_development_environment_enable">Activer l\'environnement de développement</string>
+    <string name="v7_check_for_update_an_error_occurred">Une erreur est survenue!</string>
+    <string name="v7_check_for_update_download_update">Télécharger la mise à jour</string>
+
+    <!-- ABOUT US MENU -->
+    <string name="v7_about_title">À propos de nous</string>
+    <string name="v7_about_app_version">Version: </string>
+    <string name="v7_about_general_info">INFORMATIONS GÉNÉRALES</string>
+    <string name="v7_about_general_info_text">Cette application est conçue pour le suivi du ping pour les jeux basés sur AWS. Elle est entièrement open source et sans publicité. Elle a été créée par moi (Ramazan Muslu) en tant que projet de loisir et évolue avec le soutien de la communauté.</string>
+    <string name="v7_about_legal_info">INFORMATIONS LÉGALES</string>
+    <string name="v7_about_legal_info_title_1">Licences Open Source</string>
+    <string name="v7_about_legal_info_title_1_description">Licence MIT</string>
+
+    <!-- CREDITS MENU -->
+    <string name="v7_credits_title">Contributeurs</string>
+    <string name="v7_credits_project">DÉVELOPPEURS</string>
+    <string name="v7_credits_project_development">Développeur principal</string>
+    <string name="v7_credits_project_language_support">Support linguistique: </string>
+
+    <!-- GLOBALS -->
+    <string name="v7_currents_visible">Visible</string>
+    <string name="v7_currents_hidden">Masqué</string>
+    <string name="v7_color_white">Blanc</string>
+    <string name="v7_color_green">Vert</string>
+    <string name="v7_copy_text">© 2025 Yora Studio - Ramazan Muslu</string>
+
+    <!-- LATENCY LOGS MENU -->
+    <string name="v7_latency_logs_extract_logs">Extraire les logs</string>
+
+    <!-- TOASTS -->
+    <string name="v7_toast_error_permission_overlay">Le texte ne peut pas être affiché sans l\'autorisation de superposition.</string>
 </resources>

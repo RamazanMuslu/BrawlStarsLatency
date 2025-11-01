@@ -167,4 +167,101 @@ Discord: @ramazan_developer</string>
 
     <string name="qs_button_default">Измеритель Пинга</string>
     <string name="qs_button_active">Измеритель Пинга Активирован</string>
+
+    <!-- VERSION 7 UPGRADE -->
+
+    <!-- MAIN MENU -->
+    <string name="v7_main_app_title">Brawl Stars Ping Meter</string>
+    <string name="v7_main_status_working">РАБОТАЕТ</string>
+    <string name="v7_main_status_not_working">НЕ РАБОТАЕТ</string>
+    <string name="v7_main_selected_server">Выбранный сервер: </string>
+    <string name="v7_main_selected_server_automatic">Автоматически </string>
+    <string name="v7_main_start">СТАРТ</string>
+    <string name="v7_main_stop">СТОП</string>
+    <string name="v7_main_activity_records">Записи активности</string>
+
+    <!-- SETTINGS MENU -->
+    <string name="v7_settings_title">Настройки</string>
+    <string name="v7_settings_personalization">Персонализация</string>
+    <string name="v7_settings_personalization_language">Язык</string>
+    <string name="v7_settings_personalization_language_description">Изменить язык приложения </string>
+    <string name="v7_settings_personalization_language_description_current">Текущий: </string>
+    <string name="v7_settings_personalization_text_size">Размер текста</string>
+    <string name="v7_settings_personalization_text_size_current">Текущий размер: </string>
+    <string name="v7_settings_personalization_text_color">Цвет текста</string>
+    <string name="v7_settings_personalization_text_color_current">Текущий цвет: </string>
+    <string name="v7_settings_personalization_icon_visibility">Видимость иконки задержки</string>
+    <string name="v7_settings_personalization_icon_visibility_current">Текущий статус: </string>
+    <string name="v7_settings_personalization_text_visibility">Видимость текста задержки</string>
+    <string name="v7_settings_personalization_text_visibility_current">Текущий статус: </string>
+    <string name="v7_settings_personalization_close_button_visibility">Видимость кнопки закрытия</string>
+    <string name="v7_settings_personalization_close_button_visibility_current">Текущий статус: </string>
+    <string name="v7_settings_network_and_performance">Сеть и производительность</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection">Автоматический выбор сервера</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_selected">Выбранный сервер</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_change">ИЗМЕНИТЬ</string>
+    <string name="v7_settings_network_and_performance_refreshing_time">Интервал задержки</string>
+    <string name="v7_settings_network_and_performance_refreshing_time_current">Миллисекунды</string>
+    <string name="v7_settings_about">О приложении и Поддержка</string>
+    <string name="v7_settings_about_check_for_update">Проверить наличие обновлений</string>
+    <string name="v7_settings_about_check_for_update_description">Убедитесь, что у вас последняя версия</string>
+    <string name="v7_settings_about_about_us">О нас</string>
+    <string name="v7_settings_about_about_us_description">Информация о приложении и детали версии</string>
+    <string name="v7_settings_about_credits">Участники</string>
+    <string name="v7_settings_about_credits_description">Спасибо всем, кто нас поддерживает!</string>
+    <string name="v7_settings_app_informations">Информация о приложении</string>
+    <string name="v7_settings_app_informations_version">Версия</string>
+    <string name="v7_settings_app_informations_last_update">Обновление версии</string>
+
+    <!-- LANGUAGE MENU -->
+    <string name="v7_change_language_title">Сменить язык</string>
+
+    <!-- SERVER LIST MENU -->
+    <string name="v7_change_server_title">Выбрать сервер</string>
+    <string name="v7_change_server_refresh_all">Обновить</string>
+    <string name="v7_change_server_server_url_not_found">URL сервера не найден: </string>
+    <string name="v7_change_server_unavalible">Недоступно</string>
+    <string name="v7_change_server_low_load">Стабильно (Низкая нагрузка)</string>
+    <string name="v7_change_server_medium_load">Средняя нагрузка</string>
+    <string name="v7_change_server_heavy_load">Высокая нагрузка</string>
+    <string name="v7_change_server_very_heavy_load">Очень высокая нагрузка</string>
+
+    <!-- VERSION CHECK MENU -->
+    <string name="v7_check_for_update_title">Проверка версии</string>
+    <string name="v7_check_for_update_up_to_date">Ваше приложение обновлено!</string>
+    <string name="v7_check_for_update_new_update_avalible">Доступно новое обновление: </string>
+    <string name="v7_check_for_update_last_control">Последняя проверка: </string>
+    <string name="v7_check_for_update_control">ПРОВЕРИТЬ СЕЙЧАС</string>
+    <string name="v7_check_for_update_new_version_avalible">Доступна новая версия: </string>
+    <string name="v7_check_for_update_development_environment_enable">Включить среду разработки</string>
+    <string name="v7_check_for_update_an_error_occurred">Произошла ошибка!</string>
+    <string name="v7_check_for_update_download_update">Скачать обновление</string>
+
+    <!-- ABOUT US MENU -->
+    <string name="v7_about_title">О нас</string>
+    <string name="v7_about_app_version">Версия: </string>
+    <string name="v7_about_general_info">ОБЩАЯ ИНФОРМАЦИЯ</string>
+    <string name="v7_about_general_info_text">Это приложение создано для отслеживания пинга для игр на основе AWS. Оно полностью с открытым исходным кодом и без рекламы. Оно было создано мной (Рамазан Муслу) как хобби-проект и развивается при поддержке сообщества.</string>
+    <string name="v7_about_legal_info">ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</string>
+    <string name="v7_about_legal_info_title_1">Лицензии открытого исходного кода</string>
+    <string name="v7_about_legal_info_title_1_description">Лицензия MIT</string>
+
+    <!-- CREDITS MENU -->
+    <string name="v7_credits_title">Участники</string>
+    <string name="v7_credits_project">РАЗРАБОТЧИКИ</string>
+    <string name="v7_credits_project_development">Главный разработчик</string>
+    <string name="v7_credits_project_language_support">Языковая поддержка: </string>
+
+    <!-- GLOBALS -->
+    <string name="v7_currents_visible">Видимый</string>
+    <string name="v7_currents_hidden">Скрытый</string>
+    <string name="v7_color_white">Белый</string>
+    <string name="v7_color_green">Зеленый</string>
+    <string name="v7_copy_text">© 2025 Yora Studio - Ramazan Muslu</string>
+
+    <!-- LATENCY LOGS MENU -->
+    <string name="v7_latency_logs_extract_logs">Извлечь логи</string>
+
+    <!-- TOASTS -->
+    <string name="v7_toast_error_permission_overlay">Текст не может быть отображен без разрешения на наложение.</string>
 </resources>

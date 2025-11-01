@@ -2,11 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Bu izin, uygulamanın diğer uygulamaların üzerinde içerik çizmesine olanak tanır.
-         Yani, bizim overlay metnimiz her yerde gözükecekse bu şart! -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <!-- Besleme linklerinden veri çekmek için internet bağlantısı lazım.
-         Yoksa metinler nasıl değişecek, değil mi? -->
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -19,59 +18,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OverlayLatency"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".v7_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <!-- Deep Link intent-filter'ı yorum satırı yapıldı veya kaldırıldı -->
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:scheme="bspingmeter"
-                    android:host="server"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:scheme="bspingmeter"
-                    android:host="start"
-                    android:pathPrefix="/overlay/default" />
-            </intent-filter>
         </activity>
 
-        <!-- Bu kısım, bizim overlay metnini ekranda tutacak olan servisimizi tanımlıyor.
-             Arka planda çalışacak, kimseye çaktırmadan işini yapacak elemanımız bu. -->
-        <service
-            android:name=".OverlayService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <!-- Besleme menüsü için bir activity tanımlıyoruz.
-             Burada besleme linklerini ekleyip yöneteceğiz. -->
+        <service android:name=".OverlayService" android:enabled="true" android:exported="false" />
+        <activity android:name=".v7_AppSettingsActivity" android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".FeedingSectionActivity" />
-
-        <!-- Metin ayarları için bir activity tanımlıyoruz.
-             Metnin rengini, boyutunu falan buradan ayarlayacağız. -->
-        <activity android:name=".TextSettingsActivity" />
-
-        <activity android:name=".AppSettingsActivity" />
-
-        <!-- AboutAppActivity eklendiği gibi bırakıldı -->
-        <activity android:name=".AboutAppActivity" />
-
+        <activity android:name=".v7_ChangeLanguage" />
+        <activity android:name=".v7_ChangeServer" />
+        <activity android:name=".v7_VersionCheck" />
+        <activity android:name=".v7_ContributorsMenu" />
+        <activity android:name=".v7_AboutApp" />
         <activity android:name=".LatencyLogsActivity" />
-
         <activity android:name=".StatsActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
     </application>
 </manifest>

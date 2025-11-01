@@ -17,6 +17,11 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import org.json.JSONArray
 import org.json.JSONObject
+import android.net.Uri
+import android.os.Environment
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
 
 class LatencyLogsActivity : AppCompatActivity() {
 
@@ -38,7 +43,7 @@ class LatencyLogsActivity : AppCompatActivity() {
     private lateinit var ipFiltersContainer: LinearLayout
     private lateinit var recordsContainer: LinearLayout
     private lateinit var deleteAllLogsButton: Button
-
+    private lateinit var btnExtractLogs: Button
     private var currentSelectedIpButton: Button? = null
 
     // LatencyLogsActivity.kt dosyasını aç ve aşağıdaki override fonksiyonunu ekle
@@ -71,6 +76,8 @@ class LatencyLogsActivity : AppCompatActivity() {
         ipFiltersContainer = findViewById(R.id.filters_container)
         recordsContainer = findViewById(R.id.records_container)
         deleteAllLogsButton = findViewById(R.id.btn_delete_all_logs)
+
+        btnExtractLogs = findViewById(R.id.btn_extract_logs)
     }
 
     private fun setClickListeners() {
@@ -97,6 +104,10 @@ class LatencyLogsActivity : AppCompatActivity() {
             RefreshBody()
             Toast.makeText(this, getString(R.string.toast_latency_logs_deleted), Toast.LENGTH_SHORT).show()
             toggleMenu(false)
+        }
+
+        btnExtractLogs.setOnClickListener {
+            generateAndDownloadJson()
         }
     }
 
@@ -301,5 +312,67 @@ class LatencyLogsActivity : AppCompatActivity() {
             sharedPreferences.getLong(OverlayService.KEY_LATENCY_HIGH, 0) -> getString(R.string.latency_logs_highest)
             else -> getString(R.string.latency_logs_avarage)
         }
+    }
+
+    private fun generateAndDownloadJson() {
+        // 1. DİNAMİK JSON İÇERİĞİNİ HAZIRLA
+        // Burası senin uygulamanın anlık durumuna göre ayarlanacak yer.
+        val jsonContent = createDynamicJson()
+
+        // 2. DOSYA YOLUNU VE ADINI BELİRLE
+        // getExternalCacheDir(), uygulamanın harici önbellek dizinini verir.
+        // Bu dizin uygulaman silindiğinde temizlenir.
+        val cacheDir = externalCacheDir ?: run {
+            Toast.makeText(this, "Önbellek dizinine erişilemiyor, amk.", Toast.LENGTH_LONG).show()
+            return
+        }
+
+        // Dosya adı, örneğin: settings_20251030.json
+        val fileName = "settings_${System.currentTimeMillis()}.json"
+        val file = File(cacheDir, fileName)
+
+        // 3. JSON'I DOSYAYA YAZ
+        try {
+            FileOutputStream(file).use { outputStream ->
+                outputStream.write(jsonContent.toByteArray())
+                outputStream.flush()
+            }
+        } catch (e: IOException) {
+            e.printStackTrace()
+            Toast.makeText(this, "Dosya yazma hatası oldu, aq.", Toast.LENGTH_LONG).show()
+            return
+        }
+
+        // 4. DOSYAYI PAYLAŞIM VEYA İNDİRME İÇİN SUN
+        // FileProvider kullanmak, Android'de güvenli dosya paylaşımı için ŞARTTIR.
+        val fileUri: Uri = androidx.core.content.FileProvider.getUriForFile(
+            this,
+            // Bu kısım senin uygulamanın package name'i olmalı (örn: com.yorastudio.overlaylatency.fileprovider)
+            // Manifest dosyasında tanımlanmalıdır.
+            "${packageName}.fileprovider",
+            file
+        )
+
+        // Paylaşım Intent'i oluşturuluyor
+        val shareIntent: Intent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_STREAM, fileUri)
+            type = "application/json" // JSON MIME tipi
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION) // Dosyayı okuma izni ver
+        }
+
+        // Kullanıcının indirme uygulamasını veya paylaşım menüsünü aç
+        startActivity(Intent.createChooser(shareIntent, "JSON dosyasını kaydet veya paylaş"))
+
+        Toast.makeText(this, "JSON hazırlandı ve indirme menüsü açıldı.", Toast.LENGTH_SHORT).show()
+    }
+
+    /**
+     * Uygulama ayarlarını bir JSON string'ine dönüştürür.
+     */
+    private fun createDynamicJson(): String {
+        // Senin kendi ayarlarını burada al ve JSON string'i oluştur.
+        val jsonString = sharedPreferences.getString(OverlayService.KEY_LATENCY_LOG, null)
+        return jsonString.toString()
     }
 }

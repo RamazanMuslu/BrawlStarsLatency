@@ -1,7 +1,7 @@
 <!-- ![IMAGE](IMAGE_URL) -->
 
 [![GitHub release](https://img.shields.io/github/v/release/RamazanMuslu/BrawlStarsLatency.svg?logo=github&label=GitHub)](https://github.com/RamazanMuslu/BrawlStarsLatency/releases/latest)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leonlatsch/Photok/android.yml?branch=develop)
+
 [![GitHub](https://img.shields.io/github/license/RamazanMuslu/BrawlStarsLatency)](https://github.com/RamazanMuslu/BrawlStarsLatency/)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 
@@ -26,7 +26,7 @@ BSMS (Overlay Latency) is completely free, open source, and ad-free. It's develo
 ![German](https://img.shields.io/badge/German-100%25-brightgreen)
 <!-- END-TRANSLATIONS -->
 
-<!-- > You want to help translating Photok? See [CONTRIBUTING](CONTRIBUTING.md#Translations) -->
+<!-- > You want to help translating BSMS? See [CONTRIBUTING](CONTRIBUTING.md#Translations) -->
 
 ## Related Tools
 

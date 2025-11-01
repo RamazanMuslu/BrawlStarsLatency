@@ -23,6 +23,7 @@
             <ImageView
                 android:id="@+id/menu_button"
                 android:layout_width="32dp"
+                android:layout_marginTop="25dp"
                 android:layout_height="32dp"
                 android:src="@mipmap/ic_menu_foreground"
                 android:tint="#FFFFFF"
@@ -37,6 +38,7 @@
                 android:id="@+id/page_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
                 android:text="@string/latency_logs_title"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
@@ -49,6 +51,7 @@
             <ImageView
                 android:id="@+id/back_button"
                 android:layout_width="32dp"
+                android:layout_marginTop="25dp"
                 android:layout_height="32dp"
                 android:src="@mipmap/ic_arrow_down_foreground"
                 android:rotation="90"
@@ -265,6 +268,17 @@
                     android:layout_height="wrap_content"
                     android:text="@string/latency_logs_deleteall"
                     android:backgroundTint="#F44336"
+                    android:textColor="#FFFFFF"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"/>
+
+
+                <Button
+                    android:id="@+id/btn_extract_logs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/v7_latency_logs_extract_logs"
+                    android:backgroundTint="#0085f9"
                     android:textColor="#FFFFFF"
                     android:paddingHorizontal="16dp"
                     android:paddingVertical="12dp"/>

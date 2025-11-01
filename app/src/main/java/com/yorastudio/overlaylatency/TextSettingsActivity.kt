@@ -164,7 +164,7 @@ class TextSettingsActivity : AppCompatActivity() {
 
         // Renk düğmelerine tıklama olayları
         btnColorWhite.setOnClickListener { selectColor(Color.WHITE, getString(R.string.text_options_text_color_white)) }
-        btnColorGreen.setOnClickListener { selectColor(Color.GREEN, getString(R.R.string.text_options_text_color_green)) }
+        btnColorGreen.setOnClickListener { selectColor(Color.GREEN, getString(R.string.text_options_text_color_green)) }
 
         // Kaydet butonu sadece emin olmak için kalsın, diğerleri zaten saveSettings() çağırıyor.
         btnSaveTextSettings.setOnClickListener {

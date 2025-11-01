@@ -164,4 +164,101 @@ Discord：@ramazan_developer</string>
 
     <string name="qs_button_default">Ping测量器</string>
     <string name="qs_button_active">Ping测量器已激活</string>
+
+    <!-- VERSION 7 UPGRADE -->
+
+    <!-- MAIN MENU -->
+    <string name="v7_main_app_title">Brawl Stars Ping Meter</string>
+    <string name="v7_main_status_working">正在工作</string>
+    <string name="v7_main_status_not_working">未工作</string>
+    <string name="v7_main_selected_server">已选服务器: </string>
+    <string name="v7_main_selected_server_automatic">自动 </string>
+    <string name="v7_main_start">启动</string>
+    <string name="v7_main_stop">停止</string>
+    <string name="v7_main_activity_records">活动记录</string>
+
+    <!-- SETTINGS MENU -->
+    <string name="v7_settings_title">设置</string>
+    <string name="v7_settings_personalization">个性化</string>
+    <string name="v7_settings_personalization_language">语言</string>
+    <string name="v7_settings_personalization_language_description">更改应用语言 </string>
+    <string name="v7_settings_personalization_language_description_current">当前: </string>
+    <string name="v7_settings_personalization_text_size">文本大小</string>
+    <string name="v7_settings_personalization_text_size_current">当前大小: </string>
+    <string name="v7_settings_personalization_text_color">文本颜色</string>
+    <string name="v7_settings_personalization_text_color_current">当前颜色: </string>
+    <string name="v7_settings_personalization_icon_visibility">延迟图标可见性</string>
+    <string name="v7_settings_personalization_icon_visibility_current">当前状态: </string>
+    <string name="v7_settings_personalization_text_visibility">延迟文本可见性</string>
+    <string name="v7_settings_personalization_text_visibility_current">当前状态: </string>
+    <string name="v7_settings_personalization_close_button_visibility">关闭按钮可见性</string>
+    <string name="v7_settings_personalization_close_button_visibility_current">当前状态: </string>
+    <string name="v7_settings_network_and_performance">网络和性能</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection">自动服务器选择</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_selected">已选服务器</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_change">更改</string>
+    <string name="v7_settings_network_and_performance_refreshing_time">延迟间隔</string>
+    <string name="v7_settings_network_and_performance_refreshing_time_current">毫秒</string>
+    <string name="v7_settings_about">关于与支持</string>
+    <string name="v7_settings_about_check_for_update">检查更新</string>
+    <string name="v7_settings_about_check_for_update_description">确保您使用的是最新版本</string>
+    <string name="v7_settings_about_about_us">关于我们</string>
+    <string name="v7_settings_about_about_us_description">应用信息和版本详情</string>
+    <string name="v7_settings_about_credits">贡献者</string>
+    <string name="v7_settings_about_credits_description">感谢所有支持我们的人！</string>
+    <string name="v7_settings_app_informations">应用信息</string>
+    <string name="v7_settings_app_informations_version">版本</string>
+    <string name="v7_settings_app_informations_last_update">版本更新</string>
+
+    <!-- LANGUAGE MENU -->
+    <string name="v7_change_language_title">更改语言</string>
+
+    <!-- SERVER LIST MENU -->
+    <string name="v7_change_server_title">选择服务器</string>
+    <string name="v7_change_server_refresh_all">刷新</string>
+    <string name="v7_change_server_server_url_not_found">服务器URL未找到: </string>
+    <string name="v7_change_server_unavalible">不可用</string>
+    <string name="v7_change_server_low_load">稳定 (低负载)</string>
+    <string name="v7_change_server_medium_load">中等负载</string>
+    <string name="v7_change_server_heavy_load">高负载</string>
+    <string name="v7_change_server_very_heavy_load">非常高负载</string>
+
+    <!-- VERSION CHECK MENU -->
+    <string name="v7_check_for_update_title">版本检查</string>
+    <string name="v7_check_for_update_up_to_date">您的应用已是最新版本！</string>
+    <string name="v7_check_for_update_new_update_avalible">有新更新可用: </string>
+    <string name="v7_check_for_update_last_control">上次检查: </string>
+    <string name="v7_check_for_update_control">立即检查</string>
+    <string name="v7_check_for_update_new_version_avalible">有新版本可用: </string>
+    <string name="v7_check_for_update_development_environment_enable">启用开发环境</string>
+    <string name="v7_check_for_update_an_error_occurred">发生了一个错误！</string>
+    <string name="v7_check_for_update_download_update">下载更新</string>
+
+    <!-- ABOUT US MENU -->
+    <string name="v7_about_title">关于我们</string>
+    <string name="v7_about_app_version">版本: </string>
+    <string name="v7_about_general_info">一般信息</string>
+    <string name="v7_about_general_info_text">此应用程序用于基于AWS的游戏的ping跟踪。它是完全开源且无广告的。它由我（Ramazan Muslu）作为一个爱好项目创建，并随着社区支持而发展。</string>
+    <string name="v7_about_legal_info">法律信息</string>
+    <string name="v7_about_legal_info_title_1">开源许可证</string>
+    <string name="v7_about_legal_info_title_1_description">MIT 许可证</string>
+
+    <!-- CREDITS MENU -->
+    <string name="v7_credits_title">贡献者</string>
+    <string name="v7_credits_project">开发者</string>
+    <string name="v7_credits_project_development">主要开发者</string>
+    <string name="v7_credits_project_language_support">语言支持: </string>
+
+    <!-- GLOBALS -->
+    <string name="v7_currents_visible">可见</string>
+    <string name="v7_currents_hidden">隐藏</string>
+    <string name="v7_color_white">白色</string>
+    <string name="v7_color_green">绿色</string>
+    <string name="v7_copy_text">© 2025 Yora Studio - Ramazan Muslu</string>
+
+    <!-- LATENCY LOGS MENU -->
+    <string name="v7_latency_logs_extract_logs">提取日志</string>
+
+    <!-- TOASTS -->
+    <string name="v7_toast_error_permission_overlay">没有悬浮层权限无法显示文本。</string>
 </resources>

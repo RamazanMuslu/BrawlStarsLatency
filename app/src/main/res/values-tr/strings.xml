@@ -167,4 +167,102 @@ Discord: ramazan_developer</string>
 
     <string name="qs_button_default">Ping Metre</string>
     <string name="qs_button_active">Ping Metre Çalışıyor</string>
+
+    <!-- VERSION 7 UPGRADE -->
+
+    <!-- MAIN MENU -->
+    <string name="v7_main_app_title">Brawl Stars Ping Ölçer</string>
+    <string name="v7_main_status_working">ÇALIŞIYOR</string>
+    <string name="v7_main_status_not_working">ÇALIŞMIYOR</string>
+    <string name="v7_main_selected_server">Seçili Sunucu: </string>
+    <string name="v7_main_selected_server_automatic">Otomatik </string>
+    <string name="v7_main_start">BAŞLAT</string>
+    <string name="v7_main_stop">DURDUR</string>
+    <string name="v7_main_activity_records">Aktivite Kayıtları</string>
+
+    <!-- SETTINGS MENU -->
+    <string name="v7_settings_title">Ayarlar</string>
+    <string name="v7_settings_personalization">Kişiselleştirme</string>
+    <string name="v7_settings_personalization_language">Dil</string>
+    <string name="v7_settings_personalization_language_description">Uygulama dilini değiştir </string>
+    <string name="v7_settings_personalization_language_description_current">Mevcut: </string>
+    <string name="v7_settings_personalization_text_size">Metin Boyutu</string>
+    <string name="v7_settings_personalization_text_size_current">Mevcut Boyut: </string>
+    <string name="v7_settings_personalization_text_color">Metin Rengi</string>
+    <string name="v7_settings_personalization_text_color_current">Mevcut Renk: </string>
+    <string name="v7_settings_personalization_icon_visibility">Gecikme İkonu Görünürlüğü</string>
+    <string name="v7_settings_personalization_icon_visibility_current">Mevcut Durum: </string>
+    <string name="v7_settings_personalization_text_visibility">Gecikme Metni Görünürlüğü</string>
+    <string name="v7_settings_personalization_text_visibility_current">Mevcut Durum: </string>
+    <string name="v7_settings_personalization_close_button_visibility">Kapatma Butonu Görünürlüğü</string>
+    <string name="v7_settings_personalization_close_button_visibility_current">Mevcut Durum: </string>
+    <string name="v7_settings_network_and_performance">Ağ ve Performans</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection">Otomatik Sunucu Seçimi</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_selected">Seçili Sunucu</string>
+    <string name="v7_settings_network_and_performance_automatic_server_selection_change">DEĞİŞTİR</string>
+    <string name="v7_settings_network_and_performance_refreshing_time">Gecikme Yenileme Aralığı</string>
+    <string name="v7_settings_network_and_performance_refreshing_time_current">Milisaniye</string>
+    <string name="v7_settings_about">Hakkında ve Destek</string>
+    <string name="v7_settings_about_check_for_update">Güncelleme Kontrol Et</string>
+    <string name="v7_settings_about_check_for_update_description">En son versiyona sahip olduğunuzdan emin olun</string>
+    <string name="v7_settings_about_about_us">Hakkımızda</string>
+    <string name="v7_settings_about_about_us_description">Uygulama bilgileri ve versiyon detayları</string>
+    <string name="v7_settings_about_credits">Katkıda Bulunanlar</string>
+    <string name="v7_settings_about_credits_description">Bizi destekleyen herkese teşekkürler!</string>
+    <string name="v7_settings_app_informations">Uygulama Bilgileri</string>
+    <string name="v7_settings_app_informations_version">Versiyon</string>
+    <string name="v7_settings_app_informations_last_update">Versiyon Güncellemesi</string>
+
+    <!-- LANGUAGE MENU -->
+    <string name="v7_change_language_title">Dil Değiştir</string>
+
+    <!-- SERVER LIST MENU -->
+    <string name="v7_change_server_title">Sunucu Seç</string>
+    <string name="v7_change_server_refresh_all">Yenile</string>
+    <string name="v7_change_server_server_url_not_found">Sunucu URL\'si bulunamadı: </string>
+    <string name="v7_change_server_unavalible">Kullanılamıyor</string>
+    <string name="v7_change_server_low_load">Stabil (Düşük Yük)</string>
+    <string name="v7_change_server_medium_load">Orta Yük</string>
+    <string name="v7_change_server_heavy_load">Yüksek Yük</string>
+    <string name="v7_change_server_very_heavy_load">Çok Yüksek Yük</string>
+
+    <!-- VERSION CHECK MENU -->
+    <string name="v7_check_for_update_title">Versiyon Kontrolü</string>
+    <string name="v7_check_for_update_up_to_date">Uygulamanız Güncel!</string>
+    <string name="v7_check_for_update_new_update_avalible">Yeni Güncelleme Mevcut: </string>
+    <string name="v7_check_for_update_last_control">Son Kontrol: </string>
+    <string name="v7_check_for_update_control">ŞİMDİ KONTROL ET</string>
+    <string name="v7_check_for_update_new_version_avalible">Yeni versiyon mevcut: </string>
+    <string name="v7_check_for_update_development_environment_enable">Geliştirme ortamını etkinleştir</string>
+    <string name="v7_check_for_update_an_error_occurred">Bir hata oluştu!</string>
+    <string name="v7_check_for_update_download_update">Güncellemeyi İndir</string>
+
+    <!-- ABOUT US MENU -->
+    <string name="v7_about_title">Hakkımızda</string>
+    <string name="v7_about_app_version">Versiyon: </string>
+    <string name="v7_about_general_info">GENEL BİLGİLER</string>
+    <string name="v7_about_general_info_text">Bu uygulama, AWS tabanlı oyunlar için ping takibi yapmak amacıyla yapılmıştır. Tamamen açık kaynak ve reklamsızdır. Tarafımdan (Ramazan Muslu) hobi projesi olarak oluşturulmuştur ve topluluk desteği ile gelişmektedir.</string>
+    <string name="v7_about_legal_info">YASAL BİLGİLER</string>
+    <string name="v7_about_legal_info_title_1">Açık Kaynak Lisansları</string>
+    <string name="v7_about_legal_info_title_1_description">MIT Lisansı</string>
+
+    <!-- CREDITS MENU -->
+    <string name="v7_credits_title">Katkıda Bulunanlar</string>
+    <string name="v7_credits_project">GELİŞTİRİCİLER</string>
+    <string name="v7_credits_project_development">Ana Geliştirici</string>
+    <string name="v7_credits_project_language_support">Dil Desteği: </string>
+
+    <!-- GLOBALS -->
+    <string name="v7_currents_visible">Görünür</string>
+    <string name="v7_currents_hidden">Gizli</string>
+    <string name="v7_color_white">Beyaz</string>
+    <string name="v7_color_green">Yeşil</string>
+    <string name="v7_copy_text">© 2025 Yora Studio - Ramazan Muslu</string>
+
+    <!-- LATENCY LOGS MENU -->
+    <string name="v7_latency_logs_extract_logs">Kayıtları Çıkar</string>
+
+    <!-- TOASTS -->
+    <string name="v7_toast_error_permission_overlay">Metin, ekran yerleşimi izni olmadan gösterilemez.</string>
+
 </resources>

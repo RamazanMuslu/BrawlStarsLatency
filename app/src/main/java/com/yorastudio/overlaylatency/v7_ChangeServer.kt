@@ -81,8 +81,7 @@ class v7_ChangeServer : AppCompatActivity() {
         // Yenileme Butonu
         btnRefreshServers.setOnClickListener {
             pingCache.clear() // Cache'i temizle
-            setupServerRecyclerView(recyclerView) // Listeyi yeniden kurarak pingleri yenile
-            Toast.makeText(this, "Ping değerleri güncelleniyor, aq!", Toast.LENGTH_SHORT).show()
+            setupServerRecyclerView(recyclerView)
         }
     }
 
@@ -120,7 +119,7 @@ class v7_ChangeServer : AppCompatActivity() {
 
             setupServerRecyclerView(recyclerView) // UI'ı güncelle
         } else {
-            Toast.makeText(this, "Sunucu URL'si bulunamadı: $serverName", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.v7_change_server_server_url_not_found) + serverName, Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -188,11 +187,11 @@ class v7_ChangeServer : AppCompatActivity() {
 
     fun getStatusText(pingMs: Long): String {
         return when {
-            pingMs == -1L || pingMs == -2L || pingMs == -3L -> "Erişilemiyor"
-            pingMs <= 50 -> "Stabil / Düşük Yük"
-            pingMs <= 150 -> "Orta Yük"
-            pingMs <= 300 -> "Yüksek Yük"
-            else -> "Çok Yüksek Yük"
+            pingMs == -1L || pingMs == -2L || pingMs == -3L -> getString(R.string.v7_change_server_unavalible)
+            pingMs <= 50 -> getString(R.string.v7_change_server_low_load)
+            pingMs <= 150 -> getString(R.string.v7_change_server_medium_load)
+            pingMs <= 300 -> getString(R.string.v7_change_server_heavy_load)
+            else -> getString(R.string.v7_change_server_very_heavy_load)
         }
     }
 
