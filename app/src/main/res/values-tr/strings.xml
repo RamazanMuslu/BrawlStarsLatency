@@ -220,6 +220,7 @@ Discord: ramazan_developer</string>
     <string name="v7_change_server_title">Sunucu Seç</string>
     <string name="v7_change_server_refresh_all">Yenile</string>
     <string name="v7_change_server_server_url_not_found">Sunucu URL\'si bulunamadı: </string>
+    <string name="v7_change_server_refreshing">Kontrol Ediliyor...</string>
     <string name="v7_change_server_unavalible">Kullanılamıyor</string>
     <string name="v7_change_server_low_load">Stabil (Düşük Yük)</string>
     <string name="v7_change_server_medium_load">Orta Yük</string>

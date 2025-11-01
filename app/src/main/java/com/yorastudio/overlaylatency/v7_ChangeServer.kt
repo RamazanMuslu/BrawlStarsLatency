@@ -229,6 +229,7 @@ class ServerAdapter(
         return ServerViewHolder(view)
     }
 
+
     override fun getItemCount(): Int = serverList.size
 
     override fun onBindViewHolder(holder: ServerViewHolder, position: Int) {
@@ -248,7 +249,8 @@ class ServerAdapter(
 
         // Yükleniyor durumları
         holder.pingTextView.text = "..."
-        holder.statusTextView.text = "Kontrol Ediliyor..."
+        holder.statusTextView.text = holder.itemView.context.getString(R.string.v7_change_server_refreshing)
+
 
         if (cachedPing != null) {
             // CACHE HIT

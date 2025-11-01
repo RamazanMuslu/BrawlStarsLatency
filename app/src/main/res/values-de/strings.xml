@@ -219,6 +219,7 @@ Discord: @ramazan_developer</string>
     <string name="v7_change_server_title">Server auswählen</string>
     <string name="v7_change_server_refresh_all">Aktualisieren</string>
     <string name="v7_change_server_server_url_not_found">Server-URL nicht gefunden: </string>
+    <string name="v7_change_server_refreshing">Wird geprüft...</string>
     <string name="v7_change_server_unavalible">Nicht verfügbar</string>
     <string name="v7_change_server_low_load">Stabil (Geringe Last)</string>
     <string name="v7_change_server_medium_load">Mittlere Last</string>

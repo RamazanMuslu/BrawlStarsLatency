@@ -34,6 +34,9 @@ import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.plus
 import kotlin.apply
 import kotlin.compareTo
+import android.util.Log
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 class v7_MainActivity : AppCompatActivity() {
 
@@ -75,6 +78,8 @@ class v7_MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_version7)
+
+        checkUpdateInBackground()
 
         // Bu, LocaleHelper'ı kullanıyorsan gerekli
         // attachBaseContext(LocaleHelper.onAttach(this))
@@ -131,6 +136,21 @@ class v7_MainActivity : AppCompatActivity() {
             tvMainPingText.visibility = TextView.VISIBLE
             pingMeterDemo()
         }*/
+    }
+
+    fun checkUpdateInBackground() {
+        CoroutineScope(Dispatchers.Main).launch {
+
+            val updateFound = UpdateChecker.isUpdateAvailable(applicationContext)
+
+            // Sonuç ana thread'e döndü.
+            if (updateFound)
+            {
+                val intent = Intent(this@v7_MainActivity, v7_VersionCheck::class.java)
+                startActivity(intent)
+            }
+            else { }
+        }
     }
 
     /*private fun handleDeepLink(intent: Intent?) {
@@ -432,4 +452,76 @@ class v7_MainActivity : AppCompatActivity() {
         // Eğer bir sunucu bulunduysa (null değilse), onun 'url' özelliğini döndürür.
         return foundServer?.url
     }
+}
+
+object UpdateChecker {
+
+    // LOG TAG'i
+    private const val TAG = "UpdateChecker"
+
+    /**
+     * 🔥 GitHub'a bağlanır, en son versiyon kodunu çeker ve
+     * yüklü versiyon kodu ile karşılaştırır.
+     *
+     * @param context Context objesi (versionCode'u almak için gerekli).
+     * @return Yeni bir güncelleme varsa true, yoksa false döner.
+     */
+    suspend fun isUpdateAvailable(context: Context): Boolean = withContext(Dispatchers.IO) {
+        // Uygulamanın getAppVersionDetails fonksiyonunu burada kullanacağız (aşağıda ekli)
+        val currentVersionCode = getAppVersionDetails(context).versionCode
+        Log.d(TAG, "Current Version Code: $currentVersionCode")
+
+        try {
+            // RetrofitClient'ı kullanarak JSON'ı çek
+            val remoteInfo = RetrofitClient.rawJsonService.getRemoteVersionInfo()
+            val remoteVersionCode = remoteInfo.latestVersionCode
+
+            Log.d(TAG, "Remote Version Code: $remoteVersionCode")
+
+            // Eğer uzak versiyon, yüklü versiyondan büyükse, güncelleme var demektir.
+            return@withContext remoteVersionCode > currentVersionCode
+
+        } catch (e: Exception) {
+            // Ağ hatası, JSON parse hatası vb.
+            //Log.e(TAG, "Güncelleme bilgisi çekilemedi, hata: ${e.message}")
+            // Hata durumunda güncelleme var dememek en güvenlisidir.
+            return@withContext false
+        }
+    }
+
+    /**
+     * Uygulamanın versiyon detaylarını döndüren yardımcı fonksiyon.
+     * (Bu fonksiyonu Activity'den buraya taşımamız veya ortak bir yere koymamız lazım).
+     * NOT: getAppVersionDetails fonksiyonunu buraya taşıdım.
+     */
+    private fun getAppVersionDetails(context: Context): AppVersionInfo {
+        // ... Mevcut Activity'deki getAppVersionDetails fonksiyonunun içeriği buraya gelecek
+        // (Sana gönderdiğin kodda zaten vardı, onu buraya taşıdık)
+
+        // **Kopyala-Yapıştır Kısmı (V7_VersionCheck sınıfından):**
+        try {
+            val packageName = context.packageName
+            val packageInfo = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+                context.packageManager.getPackageInfo(packageName, android.content.pm.PackageManager.PackageInfoFlags.of(0L))
+            } else {
+                @Suppress("DEPRECATION")
+                context.packageManager.getPackageInfo(packageName, 0)
+            }
+            val versionCode: Int
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+                versionCode = packageInfo.longVersionCode.toInt()
+            } else {
+                @Suppress("DEPRECATION")
+                versionCode = packageInfo.versionCode
+            }
+            val versionName = packageInfo.versionName.toString()
+            return AppVersionInfo(versionCode, versionName)
+        } catch (e: android.content.pm.PackageManager.NameNotFoundException) {
+            e.printStackTrace()
+            return AppVersionInfo(0, "Unknown")
+        }
+    }
+
+    // AppVersionInfo Data Class'ı (Ortak bir yere koy)
+    data class AppVersionInfo(val versionCode: Int, val versionName: String)
 }

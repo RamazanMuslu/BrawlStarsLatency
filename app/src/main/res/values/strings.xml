@@ -220,6 +220,7 @@ Discord: @ramazan_developer</string>
     <string name="v7_change_server_title">Select Server</string>
     <string name="v7_change_server_refresh_all">Refresh</string>
     <string name="v7_change_server_server_url_not_found">Server URL not found: </string>
+    <string name="v7_change_server_refreshing">Checking...</string>
     <string name="v7_change_server_unavalible">Unavailable</string>
     <string name="v7_change_server_low_load">Stable (Low Load)</string>
     <string name="v7_change_server_medium_load">Medium Load</string>

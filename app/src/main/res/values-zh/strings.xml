@@ -217,6 +217,7 @@ Discord：@ramazan_developer</string>
     <string name="v7_change_server_title">选择服务器</string>
     <string name="v7_change_server_refresh_all">刷新</string>
     <string name="v7_change_server_server_url_not_found">服务器URL未找到: </string>
+    <string name="v7_change_server_refreshing">正在检查...</string>
     <string name="v7_change_server_unavalible">不可用</string>
     <string name="v7_change_server_low_load">稳定 (低负载)</string>
     <string name="v7_change_server_medium_load">中等负载</string>

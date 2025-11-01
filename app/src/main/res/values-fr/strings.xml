@@ -220,6 +220,7 @@ Discord : @ramazan_developer</string>
     <string name="v7_change_server_title">Sélectionner le serveur</string>
     <string name="v7_change_server_refresh_all">Actualiser</string>
     <string name="v7_change_server_server_url_not_found">URL du serveur introuvable: </string>
+    <string name="v7_change_server_refreshing">Vérification...</string>
     <string name="v7_change_server_unavalible">Indisponible</string>
     <string name="v7_change_server_low_load">Stable (Faible charge)</string>
     <string name="v7_change_server_medium_load">Charge moyenne</string>
