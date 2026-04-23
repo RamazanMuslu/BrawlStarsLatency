@@ -1,1 +1,2 @@
 # BrawlStarsLatency
+# BrawlStarsLatency
