@@ -92,7 +92,7 @@
   },
   {
     "id": 14,
-    "name": "AP/Singapore (!+/-60ms) [+]",
+    "name": "AP/Singapore [+]",
     "url": "singapore.ap.overlaylatency.top",
     "isAws": false,
     "isICMP": true
